@@ -1,0 +1,261 @@
+{
+    "schema_version": 1,
+    "id": "sakura-pulse",
+    "name": "Sakura Pulse",
+    "version": "1.0.0",
+    "author": "Edgajuman",
+    "description": "Tema anime nocturno con vidrio índigo, neón sakura, tipografía redondeada y un set completo de iconos.",
+    "inherits": "dark",
+    "colors": {
+        "window": "#080A18",
+        "panel": "#12152F",
+        "panel_alt": "#191D3D",
+        "surface": "#242950",
+        "surface_hover": "#343B6B",
+        "border": "#4B4F7D",
+        "text": "#F6F4FF",
+        "muted": "#B2B6D6",
+        "accent": "#FF5CA8",
+        "accent_hover": "#FF82BC",
+        "selection": "#49386F",
+        "danger": "#FF5577",
+        "canvas": "#050711",
+        "timeline": "#090C1E",
+        "track": "#151A38"
+    },
+    "typography": {
+        "family": "M PLUS Rounded 1c",
+        "file": "assets/fonts/RoundedMplus1c-Regular.ttf",
+        "size": 11
+    },
+    "geometry": {
+        "radius": {
+            "control": 10,
+            "panel": 16,
+            "menu": 12
+        },
+        "border": {
+            "width": 1
+        }
+    },
+    "materials": {
+        "panel": {
+            "type": "glass",
+            "opacity": 0.86
+        }
+    },
+    "backgrounds": {
+        "window": {
+            "type": "radial-gradient",
+            "stops": [
+                [
+                    0,
+                    "#20265A"
+                ],
+                [
+                    0.48,
+                    "#11152F"
+                ],
+                [
+                    1,
+                    "#080A18"
+                ]
+            ]
+        },
+        "editor": {
+            "image": "assets/backgrounds/editor.webp"
+        },
+        "home": {
+            "image": "assets/backgrounds/home.webp"
+        },
+        "splash": {
+            "image": "assets/backgrounds/splash.webp"
+        },
+        "timeline": {
+            "image": "assets/backgrounds/timeline.png"
+        },
+        "panel": {
+            "image": "assets/backgrounds/panel.webp"
+        }
+    },
+    "controls": {
+        "button": {
+            "background": {
+                "type": "linear-gradient",
+                "start": [
+                    0,
+                    0
+                ],
+                "end": [
+                    1,
+                    1
+                ],
+                "stops": [
+                    [
+                        0,
+                        "#242950"
+                    ],
+                    [
+                        1,
+                        "#1A1F42"
+                    ]
+                ]
+            },
+            "texture": "assets/textures/button.png",
+            "pressed_color": "#55376E"
+        },
+        "primary_button": {
+            "background": {
+                "type": "linear-gradient",
+                "start": [
+                    0,
+                    0
+                ],
+                "end": [
+                    1,
+                    1
+                ],
+                "stops": [
+                    [
+                        0,
+                        "#7C5CFF"
+                    ],
+                    [
+                        0.55,
+                        "#C05DDF"
+                    ],
+                    [
+                        1,
+                        "#FF5CA8"
+                    ]
+                ]
+            },
+            "texture": "assets/textures/primary_button.png"
+        },
+        "menu": {
+            "background": {
+                "type": "linear-gradient",
+                "start": [
+                    0,
+                    0
+                ],
+                "end": [
+                    0,
+                    1
+                ],
+                "stops": [
+                    [
+                        0,
+                        "#1C2146"
+                    ],
+                    [
+                        1,
+                        "#0D1026"
+                    ]
+                ]
+            },
+            "texture": "assets/textures/menu.png"
+        }
+    },
+    "animations": {
+        "button": {
+            "press": "glow",
+            "duration": 220,
+            "distance": 3,
+            "glow_color": "#FF5CA8"
+        },
+        "menu": {
+            "open": "fade",
+            "duration": 180
+        }
+    },
+    "clip_colors": {
+        "video": "#5547A8",
+        "recording": "#315E9B",
+        "audio": "#217B82",
+        "text": "#A33D7A",
+        "image": "#3E6D9E",
+        "effect": "#743DA2",
+        "transition": "#C05DDF",
+        "tutorial_cursor": "#E34B92",
+        "tutorial_camera": "#347A91",
+        "composition": "#6D55C7",
+        "scene": "#6554B2"
+    },
+    "asset_colors": {
+        "video": "#3C4F91",
+        "audio": "#217B82",
+        "text": "#A33D7A",
+        "composition": "#6554B2",
+        "effect": "#743DA2",
+        "transition": "#C05DDF",
+        "preparing": "#2A335F"
+    },
+    "timeline_colors": {
+        "ruler": "#9CA4D8",
+        "marker": "#55DDF2",
+        "selected_border": "#FFFFFF",
+        "clip_border": "#9A83FF",
+        "clip_text": "#FAF8FF",
+        "keyframe": "#FFB5DA",
+        "selected_keyframe": "#55DDF2",
+        "trim_handle": "#F6F4FF"
+    },
+    "canvas": {
+        "guide": "#55DDF2"
+    },
+    "recording": {
+        "countdown_background": "#090C1E",
+        "countdown_text": "#F6F4FF",
+        "paused": "#FFD166"
+    },
+    "icons": {
+        "media": "assets/icons/media.svg",
+        "audio": "assets/icons/audio.svg",
+        "text": "assets/icons/text.svg",
+        "transition": "assets/icons/transition.svg",
+        "effects": "assets/icons/effects.svg",
+        "import": "assets/icons/import.svg",
+        "record": "assets/icons/record.svg",
+        "tutorial": "assets/icons/tutorial.svg",
+        "ui": "assets/icons/ui.svg",
+        "cursor": "assets/icons/cursor.svg",
+        "camera": "assets/icons/camera.svg",
+        "sub": "assets/icons/sub.svg",
+        "smart": "assets/icons/smart.svg",
+        "save": "assets/icons/save.svg",
+        "home": "assets/icons/home.svg",
+        "export": "assets/icons/export.svg",
+        "split": "assets/icons/split.svg",
+        "duplicate": "assets/icons/duplicate.svg",
+        "delete": "assets/icons/delete.svg",
+        "undo": "assets/icons/undo.svg",
+        "redo": "assets/icons/redo.svg",
+        "play": "assets/icons/play.svg",
+        "pause": "assets/icons/pause.svg",
+        "back": "assets/icons/back.svg",
+        "forward": "assets/icons/forward.svg",
+        "fit": "assets/icons/fit.svg",
+        "fullscreen": "assets/icons/fullscreen.svg",
+        "guide": "assets/icons/guide.svg",
+        "zoom_in": "assets/icons/zoom_in.svg",
+        "zoom_out": "assets/icons/zoom_out.svg",
+        "marker": "assets/icons/marker.svg",
+        "keyframe": "assets/icons/keyframe.svg",
+        "lock": "assets/icons/lock.svg",
+        "eye": "assets/icons/eye.svg",
+        "mute": "assets/icons/mute.svg",
+        "default": "assets/icons/default.svg"
+    },
+    "marketplace": {
+        "preview": "preview.png",
+        "tags": [
+            "anime",
+            "sakura",
+            "neón",
+            "glass",
+            "oscuro",
+            "iconos completos"
+        ]
+    }
+}
