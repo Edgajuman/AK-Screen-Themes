@@ -3,7 +3,7 @@
     "id": "aurora-glass",
     "name": "Aurora Glass",
     "version": "1.0.0",
-    "author": "TuUsuarioGitHub",
+    "author": "Edgajuman",
     "description": "Ejemplo de tema translúcido con acento violeta.",
     "inherits": "dark",
     "colors": {
