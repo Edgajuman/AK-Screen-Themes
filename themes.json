@@ -79,7 +79,7 @@
           "sequence": "#795B9B"
         }
       },
-      "revision": "5b5a40e8486ea9344b1c4740a182b1857ba3f2c3",
+      "revision": "35f556216394359ae243cd72149a4d4955fb8a18",
       "assets": [
         {
           "path": "LICENSE.txt",
@@ -102,12 +102,12 @@
           "sha256": "357b676417045ce62479d9e8f1b27f6b2ab44fceb7ed398ddd37235ed28121a8"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-5b5a40e8486e/edgajuman-ak-midnight.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-35f556216394/edgajuman-ak-midnight.zip"
     },
     {
       "id": "aurora-glass",
       "name": "Aurora Glass",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Ejemplo de tema translúcido con acento violeta.",
       "schema": 1,
       "author": "edgajuman",
@@ -140,7 +140,7 @@
         "schema_version": 1,
         "id": "aurora-glass",
         "name": "Aurora Glass",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "Edgajuman",
         "description": "Ejemplo de tema translúcido con acento violeta.",
         "inherits": "dark",
@@ -263,12 +263,12 @@
           ]
         }
       },
-      "revision": "5b5a40e8486ea9344b1c4740a182b1857ba3f2c3",
+      "revision": "35f556216394359ae243cd72149a4d4955fb8a18",
       "assets": [
         {
           "path": "assets/icons/cursor.svg",
           "size": 183,
-          "sha256": "d75833895db46f3598acc4ded3e4c6ffb248a58990b06bf8c90db0d6582637cd"
+          "sha256": "3a7fa234e70db68e97b409db4994e3bb1e10ca91f938ff572de119470ee40cd8"
         },
         {
           "path": "info.md",
@@ -281,12 +281,12 @@
           "sha256": "f5858fbee121d9c14ee9577fff2523ddcc98892f05498bbd5f5548382c3f96ee"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-5b5a40e8486e/edgajuman-aurora-glass.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-35f556216394/edgajuman-aurora-glass.zip"
     },
     {
       "id": "sakura-pulse",
       "name": "Sakura Pulse",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Tema anime nocturno con vidrio índigo, neón sakura, tipografía redondeada y un set completo de iconos.",
       "schema": 1,
       "author": "edgajuman",
@@ -354,7 +354,7 @@
         "schema_version": 1,
         "id": "sakura-pulse",
         "name": "Sakura Pulse",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "author": "Edgajuman",
         "description": "Tema anime nocturno con vidrio índigo, neón sakura, tipografía redondeada y un set completo de iconos.",
         "inherits": "dark",
@@ -611,7 +611,7 @@
           ]
         }
       },
-      "revision": "5b5a40e8486ea9344b1c4740a182b1857ba3f2c3",
+      "revision": "35f556216394359ae243cd72149a4d4955fb8a18",
       "assets": [
         {
           "path": "FONT_LICENSE.md",
@@ -650,183 +650,183 @@
         },
         {
           "path": "assets/icons/audio.svg",
-          "size": 613,
-          "sha256": "3f3e60f47365c0e062381235f864cac1d75b233f92a0063ba0c1e4edc272c57c"
+          "size": 614,
+          "sha256": "8e2de8dd4bdb80067a2e16ac3c78e8406858591e036664ba966e685cd4e5f7b7"
         },
         {
           "path": "assets/icons/back.svg",
-          "size": 572,
-          "sha256": "a37d8b044a9240f9ef8d2006edf5b7820e5af53e1453d509c6e9835f0a7afb9f"
+          "size": 573,
+          "sha256": "e6ba39e79855ac2a325a09670b0aa577020f75db826993f84522a5c1705769ec"
         },
         {
           "path": "assets/icons/camera.svg",
-          "size": 679,
-          "sha256": "ee9cfe71cec9baf8380f118932b21c8d59aa9bc0f4d48221191e0a246291257f"
+          "size": 678,
+          "sha256": "da74a2b34b542132430a203d8de2f0d53d61071df9be97d65914c014d0b3c954"
         },
         {
           "path": "assets/icons/cursor.svg",
           "size": 637,
-          "sha256": "75348e47379377e40587d4c47c9474b86b1b6384e86d012b530858aeb092f988"
+          "sha256": "c411de1a1cb77e12a7d2b16bfd297a4b60c4040d1edcf5ceab857af74cc6744c"
         },
         {
           "path": "assets/icons/default.svg",
           "size": 208,
-          "sha256": "e94ccbc07b1ea9f507c09088b73f6800bf885fee29ceb214f85f5cbe2658e47f"
+          "sha256": "849ce184f4c803d2b72b8f26b6eadd1a579b1961df54ec66350b53525ace0bb9"
         },
         {
           "path": "assets/icons/delete.svg",
-          "size": 588,
-          "sha256": "3191005102aa235b04fc46005b3079d32116a1626fb03bd33e76581086f010d6"
+          "size": 589,
+          "sha256": "db9738d5628a498e31b8db020b404b1962bb9cdfdb948f9e3c3040b9ae4dbec7"
         },
         {
           "path": "assets/icons/duplicate.svg",
           "size": 649,
-          "sha256": "0f9f11720a6d196b33ade690783b46f1d81589dfa1f4f66e5d4aba79cd4fd96e"
+          "sha256": "ee9b889d644119f3b62b8348fae5bdd378b3f751bec8b51358ddceb043d46475"
         },
         {
           "path": "assets/icons/effects.svg",
-          "size": 748,
-          "sha256": "a002e8445cf28e6c9cb7de6a1ec479f8a7d08f5f89d1da1956527ad2720b716b"
+          "size": 749,
+          "sha256": "4037b173cb7989a4ef1648804503989b11640431a7dd556c3e59443f256923cf"
         },
         {
           "path": "assets/icons/export.svg",
           "size": 650,
-          "sha256": "d1f1d77e1823f511586e754a60cdb01a5da905251d8a987a0e5d7f8e6595a54e"
+          "sha256": "55e7e70ef906323b13ffb50e98c45813661b46d3cfabde619d0f1b8d515fa1d0"
         },
         {
           "path": "assets/icons/eye.svg",
-          "size": 668,
-          "sha256": "6817d3745dd41c7315702850640161ea15544bf47f15cec6385b1803c6612c0c"
+          "size": 669,
+          "sha256": "1d2594d09675f01b1311f895e7e221225df3dab2714ae5f3f560197a14ccedb0"
         },
         {
           "path": "assets/icons/fit.svg",
-          "size": 614,
-          "sha256": "f93834e289c6716215beed2aa1bd1d34c9ed7d91cc66a11c6ec323c93c682c1b"
+          "size": 615,
+          "sha256": "219d0b215e01fced55c7d0dbf73aed7aabc9e5b7c510e5b4f6affca71a5d38a5"
         },
         {
           "path": "assets/icons/forward.svg",
-          "size": 574,
-          "sha256": "27cb34a4924a1da4fc828a3d09c7447e1fb640a212665e9a3703afa2a3dd6384"
+          "size": 575,
+          "sha256": "bb2fd6cd574695e25e9853b2831dd7ac453f82e064d2b998cf3a5ff135b76a0e"
         },
         {
           "path": "assets/icons/fullscreen.svg",
-          "size": 614,
-          "sha256": "6bc42eb79cb0f0edef5a429e444a27913f52daa47bb7984817834b6eb22dd728"
+          "size": 615,
+          "sha256": "7efda0dafd3ace2c42f935f3ebd6e325f90246e68009f412d84cbeef3617efd9"
         },
         {
           "path": "assets/icons/guide.svg",
           "size": 647,
-          "sha256": "d91e31561d9e37cd7f9651a43ef771b49fd52c72623d615bf46bd97921440bd2"
+          "sha256": "be17b32b7e177d9d9e2612ccc1ec5dd5d179c0894f04d28cfaafc26fa0a94657"
         },
         {
           "path": "assets/icons/home.svg",
-          "size": 611,
-          "sha256": "a89c88e1220504e5880c15c9e0d83f6c0405f26f055ee07e1614fe6bf62c4b45"
+          "size": 612,
+          "sha256": "1b0403b33327a7c309fe5e1911efbeabe9e89ed48836835373aefe261ebfdda6"
         },
         {
           "path": "assets/icons/import.svg",
           "size": 694,
-          "sha256": "fd7427b1e3f55b7fbc88502f041dea41f34885292041204049f0c513bd2a8977"
+          "sha256": "0e9b0a8f9ce43893f0ef4a3b0c22e48e763c735e8ac9acc343ab657b1a8a1d75"
         },
         {
           "path": "assets/icons/keyframe.svg",
           "size": 616,
-          "sha256": "a468d4b5a4e88dc795e0e733a75041cb58685ec08651b969e2f41ef60bb56807"
+          "sha256": "0291b7f825e38b3c0d9f70c7aa98fe7703adf9e0e78927fe27ce2a71872dd26c"
         },
         {
           "path": "assets/icons/lock.svg",
-          "size": 605,
-          "sha256": "1159cbf50a890b2c7a7cabb89e72ffa79ed1240c6ac73c0f305647226e6b2187"
+          "size": 606,
+          "sha256": "cecc3a8331f9e0c15fe44a5345a89fda0498f927d56630f9d155a86e50a95cee"
         },
         {
           "path": "assets/icons/marker.svg",
           "size": 625,
-          "sha256": "45b798a8e9d9e63fed979d81c833e1743d0371ac92086a7e9894f182e19232d9"
+          "sha256": "093f95909c6bb51dd7a9453414c3bdbef0a0e395514702e68968123e809e6c8d"
         },
         {
           "path": "assets/icons/media.svg",
           "size": 695,
-          "sha256": "92f63b3f1bb257cdcbaaa045f2cd1f261a013a5d3c8e54186b88480d5f6be1cf"
+          "sha256": "44f5b6685b52c2c963cc8756753de7ca8fd88ca724c384b213f1b55c3e831efe"
         },
         {
           "path": "assets/icons/mute.svg",
           "size": 671,
-          "sha256": "03ef0a099fa83a1a62f66df7b509cbafae66383054f4e5c25e3375161bf2813e"
+          "sha256": "fe8dcca7e2b5543f0f96653a7880d38b1742b7152c0571747303429d2f98db1b"
         },
         {
           "path": "assets/icons/pause.svg",
           "size": 620,
-          "sha256": "a4f9c16ef6775b26796a6ecea32cd8b1304260847423d2dbfde9a9bbe24a89bf"
+          "sha256": "fa21edf86bb7a3af49bfd5b3087b3fe24506c6412406914ba10e5858c2b1aeea"
         },
         {
           "path": "assets/icons/play.svg",
           "size": 609,
-          "sha256": "277a75d3c8635ff4f646bbe8f2a07be203d8569121e817a343fd4b9ac9db11cb"
+          "sha256": "255b69f7df6c15517b461ce67c2dcc26901e235c14e7bba315fc162f0dfc7f9d"
         },
         {
           "path": "assets/icons/record.svg",
           "size": 615,
-          "sha256": "23dd351871d7bd4209b0dd526dec1a6c715414da00f89f9360de8b18e5a04e78"
+          "sha256": "549147cdcc4cd42341c6deb8248f7f5ed0717bd3496a6ff14a8af4e4b0999630"
         },
         {
           "path": "assets/icons/redo.svg",
-          "size": 601,
-          "sha256": "286b9dcf654861a443590bacad63b0648ba55c026f7e3881f474de769cee0a8c"
+          "size": 602,
+          "sha256": "76fe50b7de7335fd133b831b48ba38e5a673f601627866da3522454ac75da0f9"
         },
         {
           "path": "assets/icons/save.svg",
           "size": 615,
-          "sha256": "64de509668d37f72c199385ac0ead93344a38cf55b0517aa8c195c17459203b3"
+          "sha256": "d7fb100cc0d4cbd6dc181421692b00420b7cb660ec096dc55306d8c54af8f72c"
         },
         {
           "path": "assets/icons/smart.svg",
-          "size": 722,
-          "sha256": "361b4ef5452ad1d087796c60687c48550519f1e939417a29f4f030031f27cff6"
+          "size": 723,
+          "sha256": "5599c629bdce18a286e9fdbbc202e89e50c90f0d4a09570517f4d1de93aef748"
         },
         {
           "path": "assets/icons/split.svg",
-          "size": 621,
-          "sha256": "1182b8758173a3f752891a3b9575f558fbc8114a0391ac677a78fe6140c68fab"
+          "size": 622,
+          "sha256": "dfb535d8eed36df0ce6ce31af817d964409f560bc195b977be50f4eff6366a77"
         },
         {
           "path": "assets/icons/sub.svg",
           "size": 659,
-          "sha256": "3c2b2c9a1c98eaea000a7dc109d1c87f290b60aacb4894569bf13707541d4bbf"
+          "sha256": "123ae2d3c3a3fc50d0237464ce3d8ecaafeba25588a17ee45aeeb59d716b9efa"
         },
         {
           "path": "assets/icons/text.svg",
-          "size": 617,
-          "sha256": "5cdac798bb5d56a82b9de274b2fd958875c0f235f0b32fb087ab48e31b2e14f2"
+          "size": 618,
+          "sha256": "44c60c4c7ed0e4f8ebe292e3b832c6b7264cb10dbd5ce9869e9339f01bfc75ec"
         },
         {
           "path": "assets/icons/transition.svg",
           "size": 687,
-          "sha256": "506cbc1be0ae3d058c053bbbe384a73af6129b5a27dc63ad3f62fedf9bd406da"
+          "sha256": "17db1da12879c600c2dfe97194cef87100e41b30b27e5021a097915dedaa7124"
         },
         {
           "path": "assets/icons/tutorial.svg",
-          "size": 697,
-          "sha256": "564fa82ff45e1ec150f13100255facb139fa1623682ad77eef1b12d5df7c3ccf"
+          "size": 698,
+          "sha256": "4454942603bde67f1c49ccff51bb3f87e4d2be9cda709180e5667c2c77596d5f"
         },
         {
           "path": "assets/icons/ui.svg",
           "size": 683,
-          "sha256": "1d7e27b2ebb1415b10e0725b6e5048873f9f15c6252eaf736c3133dbbc66155b"
+          "sha256": "ea31c162bd7590db4a4569d3741191779d48e856951ee07d34a94f3005e03b93"
         },
         {
           "path": "assets/icons/undo.svg",
-          "size": 599,
-          "sha256": "38b58d2fb3ffb9a861f849aab3d31886a8757407690aeb63c7d29f3ed9d37ec7"
+          "size": 600,
+          "sha256": "63d85ea24fa2b3fb7e11161b8fcc1539f9f6edab3b2b9f60be649c296ddc7ff4"
         },
         {
           "path": "assets/icons/zoom_in.svg",
-          "size": 657,
-          "sha256": "989dd22bd4a57b052583defd8913fe091698cc3e3e55fa9159837e502a278999"
+          "size": 658,
+          "sha256": "2f968804290847c2fee3f9657aaf4d35c909f4e0a36d62327f9b961fc40e1231"
         },
         {
           "path": "assets/icons/zoom_out.svg",
-          "size": 626,
-          "sha256": "586fa859674ff58ab07bfb14c09962b2c9567f636c0fee02b39add4ee2834f68"
+          "size": 627,
+          "sha256": "82ac30d1c0a3a2508a108f17b53dac8becb7a9e247d38ac33acde7e940e6a299"
         },
         {
           "path": "assets/textures/button.png",
@@ -854,7 +854,7 @@
           "sha256": "0e2e1aaa0f8c4acf5ec2e9806308d71d8fdbb9c7742687d5d3f3d35222366f5a"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-5b5a40e8486e/edgajuman-sakura-pulse.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-35f556216394/edgajuman-sakura-pulse.zip"
     }
   ]
 }
