@@ -69,6 +69,8 @@ Usa #RRGGBB. Los nombres nativos siguientes corresponden a partes reales del edi
 
 Son compatibles con el editor Rust: se rasterizan a una textura de 64×64 y se pintan en el lugar del icono nativo. No se ejecutan scripts ni se cargan imágenes externas desde el SVG. Usa viewBox, trazos y figuras SVG simples, con colores explícitos. Máximo 256 KB por archivo y 2.000 nodos.
 
+Los antiguos marcadores `{text}` y `{accent}` no son colores SVG. Sustitúyelos por los valores hexadecimales de tu tema antes de enviar el PR; el catálogo rechaza los marcadores sin resolver para evitar iconos negros o ilegibles.
+
 Los nombres nativos disponibles para `icons` son:
 
 `Selection`, `TrackSelectFwd`, `TrackSelectBack`, `Ripple`, `Rolling`, `RateStretch`, `Remix`, `Razor`, `Slip`, `Slide`, `Pen`, `Rectangle`, `Ellipse`, `Hand`, `Zoom`, `Type`, `Play`, `Pause`, `StepBack`, `StepFwd`, `GoToIn`, `GoToOut`, `MarkIn`, `MarkOut`, `Marker`, `Insert`, `Overwrite`, `Lift`, `Extract`, `Camera`, `Loop`, `Wrench`, `Plus`, `Eye`, `EyeOff`, `Speaker`, `Mute`, `Lock`, `Unlock`, `SyncLock`, `Mic`, `Folder`, `Film`, `Sequence`, `Audio`, `Image`, `Search`, `ListView`, `IconView`, `Freeform`, `NewItem`, `Trash`, `Home`, `Workspaces`, `Hamburger`, `ChevronDown`, `ChevronRight`, `Magnet`, `Link`, `Keyframe`, `Stopwatch`, `Fx`, `Reset`, `Close`, `Fullscreen`, `Export`, `Gear`, `Info`, `Captions`, `Adjust`, `Nest`, `Undo`, `Redo`, `Bell`, `Chat`, `Globe`, `Code`, `Sparkle`, `Grid`, `Square`, `Proxy`, `Offline`, `TrackMaskBack`, `TrackMaskBackFrame`, `TrackMaskFwdFrame`, `TrackMaskFwd`, `SortIcons`, `Automate`, `Star`, `ChevronLeft`, `ArrowUp`, `Drive`, `Network`, `Clock`.

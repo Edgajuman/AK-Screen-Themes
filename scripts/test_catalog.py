@@ -1,5 +1,8 @@
 import unittest
 import catalog
+import json
+import tempfile
+from pathlib import Path
 class CatalogueTests(unittest.TestCase):
     def test_paths_are_bounded_and_passive(self):
         self.assertTrue(catalog.safe_path('assets/backgrounds/editor.webp'))
@@ -14,3 +17,12 @@ class CatalogueTests(unittest.TestCase):
         self.assertTrue(sakura['font'])
         self.assertNotIn('theme.json',[a['path'] for a in sakura['assets']])
         self.assertTrue(all(len(a['sha256'])==64 for a in sakura['assets']))
+    def test_unresolved_svg_colors_are_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            folder=Path(temporary)/'author'/'sample'
+            folder.mkdir(parents=True)
+            (folder/'theme.json').write_text(json.dumps(dict(schema=1,id='sample',name='Sample',version='1.0.0',preview='',icons={'Play':'play.svg'})),encoding='utf-8')
+            (folder/'LICENSE.txt').write_text('MIT',encoding='utf-8')
+            (folder/'play.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg"><path fill="{text}" d="M0 0h10v10z"/></svg>',encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'marcadores de color'):
+                catalog.package(folder,'0'*40)

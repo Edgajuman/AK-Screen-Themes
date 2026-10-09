@@ -65,6 +65,7 @@ def package(folder, revision):
         if file.suffix.lower()=='.svg':
             text=file.read_text(encoding='utf-8')
             if size>256*1024 or '<!DOCTYPE' in text or '<!ENTITY' in text: raise ValueError('SVG no válido')
+            if re.search(r'\{[A-Za-z_][A-Za-z_0-9]*\}', text): raise ValueError('SVG contiene marcadores de color sin resolver; usa colores explícitos')
             tree=ET.fromstring(text)
             if sum(1 for _ in tree.iter())>2000: raise ValueError('SVG demasiado complejo')
             for node in tree.iter():

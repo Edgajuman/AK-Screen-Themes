@@ -2,7 +2,7 @@
     "schema_version": 1,
     "id": "aurora-glass",
     "name": "Aurora Glass",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Edgajuman",
     "description": "Ejemplo de tema translúcido con acento violeta.",
     "inherits": "dark",

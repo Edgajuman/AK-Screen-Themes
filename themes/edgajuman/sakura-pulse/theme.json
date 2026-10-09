@@ -2,7 +2,7 @@
     "schema_version": 1,
     "id": "sakura-pulse",
     "name": "Sakura Pulse",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Edgajuman",
     "description": "Tema anime nocturno con vidrio índigo, neón sakura, tipografía redondeada y un set completo de iconos.",
     "inherits": "dark",
