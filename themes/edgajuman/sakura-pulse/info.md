@@ -1,15 +1,15 @@
 # Sakura Pulse
 
-Un tema anime nocturno completo para **AK Screen 5.0.0 o posterior**. Combina vidrio índigo, luz de neón rosa y cian, pétalos de sakura y una iconografía redondeada legible en tamaños pequeños.
+Un tema anime nocturno completo para **AK Screen 2.1.0 o posterior**. Combina vidrio índigo, luz de neón rosa y cian, pétalos de sakura y una iconografía redondeada legible en tamaños pequeños.
 
 ## Incluye
 
 - Paleta completa para editor, canvas, timeline, pistas, estados y grabación.
-- Fondos independientes para Editor, Inicio y Splash.
-- Texturas específicas para paneles, timeline, botones, botones primarios y menús.
+- Fondos independientes para Editor y Splash; el fondo Home se conserva como recurso.
+- Texturas incluidas como recursos de diseño; las texturas de widgets aún no se aplican en el editor Rust.
 - Material de panel `glass` con transparencia controlada.
 - Set completo de iconos SVG para todas las herramientas compatibles.
-- Animación de brillo al pulsar botones y aparición suave de menús.
+- Recursos de animación declarativos conservados para futuras versiones; el editor Rust no los ejecuta.
 - Fuente **M PLUS Rounded 1c** incluida para toda la aplicación.
 - Colores diferenciados para vídeo, audio, texto, imágenes, efectos, transiciones, tutoriales y composiciones.
 

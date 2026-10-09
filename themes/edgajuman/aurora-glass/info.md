@@ -1,13 +1,7 @@
 # Aurora Glass
 
-Tema de referencia para el SDK visual de AK Screen.
+Tema de referencia para AK Screen 2.1+, con acento violeta, paleta completa, radios y cursor SVG. El catálogo convierte el esquema anterior a un paquete nativo.
 
-## Incluye
+Los metadatos de degradados y rebote del diseño original se conservan para futuras versiones; no se ejecutan en el editor Rust actual. Los archivos del paquete deben mantenerse juntos.
 
-- Material translúcido tipo vidrio.
-- Gradiente para la ventana principal.
-- Texturas independientes para paneles, timeline, menús y botones.
-- Fuente e iconos reemplazables.
-- Animación de rebote al presionar controles.
-
-El paquete final debe conservar `theme.json`, este archivo y la carpeta `assets` dentro del mismo ZIP.
+Autor: Edgajuman. Colores y SVG originales de AK Screen. Distribución autorizada en el catálogo de AK Screen.

@@ -1,0 +1,57 @@
+name: Catálogo de temas
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths: ['themes/**', 'scripts/**', 'index.html', '.github/workflows/catalog.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: themes-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s scripts -p 'test_*.py'
+      - run: python scripts/catalog.py --check
+  publish:
+    needs: validate
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/catalog.py --revision '${{ github.sha }}'
+      - name: Publicar paquetes aprobados
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVISION: ${{ github.sha }}
+        run: |
+          tag="themes-${REVISION:0:12}"
+          gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --target "$REVISION" --title "Catálogo ${REVISION:0:12}" --notes 'Paquetes de temas revisados. Instala desde Temas y apariencia en AK Screen o descarga el ZIP y selecciona su theme.json.'
+          gh release upload "$tag" packages/*.zip --clobber
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add themes.json catalog-data.js
+          if ! git diff --cached --quiet; then git commit -m 'Actualizar catálogo de temas [skip ci]'; git pull --rebase; git push; fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Publicar marketplace web
+        id: deployment
+        uses: actions/deploy-pages@v4
