@@ -4,7 +4,7 @@
     {
       "id": "ak-midnight",
       "name": "AK Midnight",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Plantilla nativa: 38 colores, medidas del editor y colores por tipo de clip. Azul eléctrico sobre paneles oscuros.",
       "schema": 1,
       "author": "edgajuman",
@@ -79,7 +79,7 @@
           "sequence": "#795B9B"
         }
       },
-      "revision": "35f556216394359ae243cd72149a4d4955fb8a18",
+      "revision": "bcacb4e1bc1feb13c71b4dc31d43716f080b21ff",
       "assets": [
         {
           "path": "LICENSE.txt",
@@ -88,26 +88,26 @@
         },
         {
           "path": "info.md",
-          "size": 254,
-          "sha256": "9be65acc55ec7bee02b43b6f63840ff02ae0b769ee0e47b72bee60aa9a68fcb0"
+          "size": 392,
+          "sha256": "b20f6dc58ad55b324cdc312e1b458116c55e8921f598847ccf1b37f7bda2df1e"
         },
         {
           "path": "preview.png",
-          "size": 29786,
-          "sha256": "c55a9c41258f705eb6e0c7f0d3a09353d87a580c4b29e39f78e57feb915f0d51"
+          "size": 277247,
+          "sha256": "d63a757e47a66bb97e5af4ed9862315388b9abb2164ff52eb4eb87b61738b12e"
         },
         {
           "path": "preview.png.attribution",
-          "size": 222,
-          "sha256": "357b676417045ce62479d9e8f1b27f6b2ab44fceb7ed398ddd37235ed28121a8"
+          "size": 422,
+          "sha256": "043e0df70bb2de16ea31087b1d6efdb48eaf3d82e468015c2d0d65bcc1515c09"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-35f556216394/edgajuman-ak-midnight.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-bcacb4e1bc1f/edgajuman-ak-midnight.zip"
     },
     {
       "id": "aurora-glass",
       "name": "Aurora Glass",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Ejemplo de tema translúcido con acento violeta.",
       "schema": 1,
       "author": "edgajuman",
@@ -140,7 +140,7 @@
         "schema_version": 1,
         "id": "aurora-glass",
         "name": "Aurora Glass",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "author": "Edgajuman",
         "description": "Ejemplo de tema translúcido con acento violeta.",
         "inherits": "dark",
@@ -263,7 +263,7 @@
           ]
         }
       },
-      "revision": "35f556216394359ae243cd72149a4d4955fb8a18",
+      "revision": "bcacb4e1bc1feb13c71b4dc31d43716f080b21ff",
       "assets": [
         {
           "path": "assets/icons/cursor.svg",
@@ -277,16 +277,21 @@
         },
         {
           "path": "preview.png",
-          "size": 25951,
-          "sha256": "f5858fbee121d9c14ee9577fff2523ddcc98892f05498bbd5f5548382c3f96ee"
+          "size": 306795,
+          "sha256": "f22d40d94a581bccebc71a03540c75f4165a4aa6f310678786bc70c0d681a562"
+        },
+        {
+          "path": "preview.png.attribution",
+          "size": 423,
+          "sha256": "6264ce8afebf1443b29dff0ba84713cb7fea16acc8c2fedbc9cddeb5bc59248b"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-35f556216394/edgajuman-aurora-glass.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-bcacb4e1bc1f/edgajuman-aurora-glass.zip"
     },
     {
       "id": "sakura-pulse",
       "name": "Sakura Pulse",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Tema anime nocturno con vidrio índigo, neón sakura, tipografía redondeada y un set completo de iconos.",
       "schema": 1,
       "author": "edgajuman",
@@ -354,7 +359,7 @@
         "schema_version": 1,
         "id": "sakura-pulse",
         "name": "Sakura Pulse",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "author": "Edgajuman",
         "description": "Tema anime nocturno con vidrio índigo, neón sakura, tipografía redondeada y un set completo de iconos.",
         "inherits": "dark",
@@ -611,7 +616,7 @@
           ]
         }
       },
-      "revision": "35f556216394359ae243cd72149a4d4955fb8a18",
+      "revision": "bcacb4e1bc1feb13c71b4dc31d43716f080b21ff",
       "assets": [
         {
           "path": "FONT_LICENSE.md",
@@ -850,11 +855,26 @@
         },
         {
           "path": "preview.png",
-          "size": 451000,
-          "sha256": "0e2e1aaa0f8c4acf5ec2e9806308d71d8fdbb9c7742687d5d3f3d35222366f5a"
+          "size": 415156,
+          "sha256": "99f1f9e786cf6f5b23ea43aebcecb867b495b58d20d9471bee4a3cd95a78730c"
+        },
+        {
+          "path": "preview.png.attribution",
+          "size": 423,
+          "sha256": "c96653de425eec3d0fa8c72fda6a6c3b9d4a3ac84c8ff786976800846927ba6b"
+        },
+        {
+          "path": "splash-preview.png",
+          "size": 1290785,
+          "sha256": "58cdaa9cf1c65ed31504e9300c8c7601ed5f337198b31066e940eb84b3b25268"
+        },
+        {
+          "path": "splash-preview.png.attribution",
+          "size": 430,
+          "sha256": "c4a4e53fab0a47cbe7bff012283656e61d393f55119544eda99aa5447a570656"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-35f556216394/edgajuman-sakura-pulse.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-bcacb4e1bc1f/edgajuman-sakura-pulse.zip"
     }
   ]
 }
