@@ -13,6 +13,10 @@ Temas comunitarios revisados para **AK Screen**. Cada autor conserva sus paquete
 
 También incluimos **AK Midnight**, una plantilla nativa con los 38 colores del editor y medidas configurables.
 
+Las vistas previas muestran capturas reales de AK Screen 2.1 con contenido de demostración. La pantalla de carga también puede personalizarse:
+
+![Pantalla de carga real con Sakura Pulse](themes/edgajuman/sakura-pulse/splash-preview.png)
+
 ## Instalar
 
 En AK Screen 2.1 o posterior: **Temas → Catálogo → Actualizar → Instalar y aplicar**. Puedes ver la imagen de vista previa antes de instalar. La app instala el paquete completo en la carpeta local de temas que tenga configurada cada usuario, conserva sus componentes y verifica tamaño y SHA-256. La ubicación se obtiene de la carpeta Documentos del usuario que ejecuta la app en su propio equipo; nunca se usa la ruta personal del creador. Puedes cambiarla desde Configuración. Los temas instalados funcionan sin conexión.
