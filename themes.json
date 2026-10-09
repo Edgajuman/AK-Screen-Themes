@@ -1,0 +1,860 @@
+{
+  "schema": 1,
+  "themes": [
+    {
+      "id": "ak-midnight",
+      "name": "AK Midnight",
+      "version": "1.0.0",
+      "description": "Plantilla nativa: 38 colores, medidas del editor y colores por tipo de clip. Azul eléctrico sobre paneles oscuros.",
+      "schema": 1,
+      "author": "edgajuman",
+      "base": "dark",
+      "colors": {
+        "app_bg": "#0D1118",
+        "header_bg": "#121925",
+        "panel_bg": "#171F2D",
+        "tab_bg": "#121925",
+        "tab_text": "#ADBBD0",
+        "tab_text_active": "#F3F6FC",
+        "focus": "#408CFF",
+        "accent": "#408CFF",
+        "accent_hover": "#2A486F",
+        "text": "#F3F6FC",
+        "text_dim": "#ADBBD0",
+        "text_faint": "#6E6E6E",
+        "icon": "#ADBBD0",
+        "icon_active": "#D1D1D1",
+        "hover": "#2A486F",
+        "pressed": "#4B4B4B",
+        "field_bg": "#0E1520",
+        "field_border": "#33435B",
+        "separator": "#33435B",
+        "row_alt": "#212121",
+        "row_selected": "#253F66",
+        "hot_text": "#408CFF",
+        "tl_bg": "#171F2D",
+        "tl_track_bg": "#182334",
+        "tl_track_bg_alt": "#1E2B40",
+        "tl_header_bg": "#121925",
+        "tl_ruler_bg": "#1D1D1D",
+        "tl_ruler_tick": "#8D8D8D",
+        "tl_ruler_text": "#B0B0B0",
+        "playhead": "#408CFF",
+        "in_out_shade": "#3F3F3F",
+        "clip_selected_border": "#408CFF",
+        "render_red": "#E34850",
+        "render_yellow": "#F0F04F",
+        "render_green": "#2D9D78",
+        "monitor_bg": "#070A10",
+        "timecode": "#408CFF",
+        "danger": "#FF657A"
+      },
+      "preview": "preview.png",
+      "editor_background": "",
+      "splash_background": "",
+      "font": "",
+      "icons": {},
+      "style": {
+        "metrics": {
+          "radius": 6,
+          "radius_sm": 4,
+          "gap": 4,
+          "tab_h": 32
+        },
+        "clip_colors": {
+          "video": "#35558C",
+          "audio": "#267A69",
+          "text": "#A04D87",
+          "image": "#3A7F9A",
+          "effect": "#7E5EA7",
+          "sequence": "#795B9B",
+          "tutorial_cursor": "#C3678F",
+          "tutorial_camera": "#497FBA"
+        },
+        "asset_colors": {
+          "video": "#497FBA",
+          "audio": "#267A69",
+          "image": "#3A7F9A",
+          "effect": "#7E5EA7",
+          "sequence": "#795B9B"
+        }
+      },
+      "revision": "693fde80d78bd1c93df0a418816f175b84075e77",
+      "assets": [
+        {
+          "path": "LICENSE.txt",
+          "size": 1205,
+          "sha256": "abd5dc6e246b95df703c35da3615c78cbe6622c67ddb6c970c68a54c6e91937d"
+        },
+        {
+          "path": "info.md",
+          "size": 254,
+          "sha256": "9be65acc55ec7bee02b43b6f63840ff02ae0b769ee0e47b72bee60aa9a68fcb0"
+        },
+        {
+          "path": "preview.png",
+          "size": 29786,
+          "sha256": "c55a9c41258f705eb6e0c7f0d3a09353d87a580c4b29e39f78e57feb915f0d51"
+        },
+        {
+          "path": "preview.png.attribution",
+          "size": 222,
+          "sha256": "357b676417045ce62479d9e8f1b27f6b2ab44fceb7ed398ddd37235ed28121a8"
+        }
+      ],
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-693fde80d78b/edgajuman-ak-midnight.zip"
+    },
+    {
+      "id": "aurora-glass",
+      "name": "Aurora Glass",
+      "version": "1.0.0",
+      "description": "Ejemplo de tema translúcido con acento violeta.",
+      "schema": 1,
+      "author": "edgajuman",
+      "base": "dark",
+      "colors": {
+        "accent": "#8b6cff",
+        "background": "#090b12",
+        "header": "#1d2234",
+        "panel": "#171b2a",
+        "tabs": "#1d2234",
+        "text": "#f5f6ff",
+        "secondary": "#a1a8bd",
+        "field": "#252b40",
+        "border": "#3b4561",
+        "selection": "#3c316b",
+        "track": "#1b2030",
+        "trackAlternate": "#1d2234",
+        "monitor": "#04050a",
+        "hover": "#303851",
+        "danger": "#ff5f7c"
+      },
+      "preview": "preview.png",
+      "editor_background": "",
+      "splash_background": "",
+      "font": "",
+      "icons": {
+        "cursor": "assets/icons/cursor.svg"
+      },
+      "style": {
+        "schema_version": 1,
+        "id": "aurora-glass",
+        "name": "Aurora Glass",
+        "version": "1.0.0",
+        "author": "Edgajuman",
+        "description": "Ejemplo de tema translúcido con acento violeta.",
+        "inherits": "dark",
+        "colors": {
+          "window": "#090b12",
+          "panel": "#171b2a",
+          "panel_alt": "#1d2234",
+          "surface": "#252b40",
+          "surface_hover": "#303851",
+          "border": "#3b4561",
+          "text": "#f5f6ff",
+          "muted": "#a1a8bd",
+          "accent": "#8b6cff",
+          "accent_hover": "#a18aff",
+          "selection": "#3c316b",
+          "danger": "#ff5f7c",
+          "canvas": "#04050a",
+          "timeline": "#10131d",
+          "track": "#1b2030"
+        },
+        "typography": {
+          "family": "Inter",
+          "size": 12
+        },
+        "geometry": {
+          "radius": {
+            "control": 9,
+            "panel": 14,
+            "menu": 10
+          },
+          "border": {
+            "width": 1
+          }
+        },
+        "materials": {
+          "panel": {
+            "type": "glass",
+            "opacity": 0.88
+          }
+        },
+        "backgrounds": {
+          "window": {
+            "type": "linear-gradient",
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              1,
+              1
+            ],
+            "stops": [
+              [
+                0,
+                "#090b12"
+              ],
+              [
+                1,
+                "#18112b"
+              ]
+            ]
+          },
+          "editor": [],
+          "home": [],
+          "splash": [],
+          "timeline": [],
+          "panel": []
+        },
+        "controls": {
+          "button": {
+            "background": {
+              "type": "solid",
+              "color": "#252b40"
+            },
+            "pressed_color": "#8b6cff"
+          },
+          "primary_button": {
+            "background": {
+              "type": "linear-gradient",
+              "stops": [
+                [
+                  0,
+                  "#7355ec"
+                ],
+                [
+                  1,
+                  "#a06cff"
+                ]
+              ]
+            }
+          },
+          "menu": {
+            "background": {
+              "type": "solid",
+              "color": "#1d2234"
+            }
+          }
+        },
+        "animations": {
+          "button": {
+            "press": "bounce",
+            "duration": 170,
+            "distance": 3,
+            "glow_color": "#8b6cff"
+          },
+          "menu": {
+            "open": "fade",
+            "duration": 140
+          }
+        },
+        "icons": {
+          "cursor": "assets/icons/cursor.svg"
+        },
+        "marketplace": {
+          "preview": "preview.png",
+          "tags": [
+            "glass",
+            "violeta",
+            "macOS"
+          ]
+        }
+      },
+      "revision": "693fde80d78bd1c93df0a418816f175b84075e77",
+      "assets": [
+        {
+          "path": "assets/icons/cursor.svg",
+          "size": 183,
+          "sha256": "d75833895db46f3598acc4ded3e4c6ffb248a58990b06bf8c90db0d6582637cd"
+        },
+        {
+          "path": "info.md",
+          "size": 478,
+          "sha256": "3dba57589c686ca7cd484c64f2eb398910b40ca9bd6aa98599259832e69172d7"
+        },
+        {
+          "path": "preview.png",
+          "size": 25951,
+          "sha256": "f5858fbee121d9c14ee9577fff2523ddcc98892f05498bbd5f5548382c3f96ee"
+        }
+      ],
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-693fde80d78b/edgajuman-aurora-glass.zip"
+    },
+    {
+      "id": "sakura-pulse",
+      "name": "Sakura Pulse",
+      "version": "1.0.0",
+      "description": "Tema anime nocturno con vidrio índigo, neón sakura, tipografía redondeada y un set completo de iconos.",
+      "schema": 1,
+      "author": "edgajuman",
+      "base": "dark",
+      "colors": {
+        "accent": "#FF5CA8",
+        "background": "#080A18",
+        "header": "#191D3D",
+        "panel": "#12152F",
+        "tabs": "#191D3D",
+        "text": "#F6F4FF",
+        "secondary": "#B2B6D6",
+        "field": "#242950",
+        "border": "#4B4F7D",
+        "selection": "#49386F",
+        "track": "#151A38",
+        "trackAlternate": "#191D3D",
+        "monitor": "#050711",
+        "hover": "#343B6B",
+        "danger": "#FF5577"
+      },
+      "preview": "preview.png",
+      "editor_background": "assets/backgrounds/editor.webp",
+      "splash_background": "assets/backgrounds/splash.webp",
+      "font": "assets/fonts/RoundedMplus1c-Regular.ttf",
+      "icons": {
+        "media": "assets/icons/media.svg",
+        "audio": "assets/icons/audio.svg",
+        "text": "assets/icons/text.svg",
+        "transition": "assets/icons/transition.svg",
+        "effects": "assets/icons/effects.svg",
+        "import": "assets/icons/import.svg",
+        "record": "assets/icons/record.svg",
+        "tutorial": "assets/icons/tutorial.svg",
+        "ui": "assets/icons/ui.svg",
+        "cursor": "assets/icons/cursor.svg",
+        "camera": "assets/icons/camera.svg",
+        "sub": "assets/icons/sub.svg",
+        "smart": "assets/icons/smart.svg",
+        "save": "assets/icons/save.svg",
+        "home": "assets/icons/home.svg",
+        "export": "assets/icons/export.svg",
+        "split": "assets/icons/split.svg",
+        "duplicate": "assets/icons/duplicate.svg",
+        "delete": "assets/icons/delete.svg",
+        "undo": "assets/icons/undo.svg",
+        "redo": "assets/icons/redo.svg",
+        "play": "assets/icons/play.svg",
+        "pause": "assets/icons/pause.svg",
+        "back": "assets/icons/back.svg",
+        "forward": "assets/icons/forward.svg",
+        "fit": "assets/icons/fit.svg",
+        "fullscreen": "assets/icons/fullscreen.svg",
+        "guide": "assets/icons/guide.svg",
+        "zoom_in": "assets/icons/zoom_in.svg",
+        "zoom_out": "assets/icons/zoom_out.svg",
+        "marker": "assets/icons/marker.svg",
+        "keyframe": "assets/icons/keyframe.svg",
+        "lock": "assets/icons/lock.svg",
+        "eye": "assets/icons/eye.svg",
+        "mute": "assets/icons/mute.svg",
+        "default": "assets/icons/default.svg"
+      },
+      "style": {
+        "schema_version": 1,
+        "id": "sakura-pulse",
+        "name": "Sakura Pulse",
+        "version": "1.0.0",
+        "author": "Edgajuman",
+        "description": "Tema anime nocturno con vidrio índigo, neón sakura, tipografía redondeada y un set completo de iconos.",
+        "inherits": "dark",
+        "colors": {
+          "window": "#080A18",
+          "panel": "#12152F",
+          "panel_alt": "#191D3D",
+          "surface": "#242950",
+          "surface_hover": "#343B6B",
+          "border": "#4B4F7D",
+          "text": "#F6F4FF",
+          "muted": "#B2B6D6",
+          "accent": "#FF5CA8",
+          "accent_hover": "#FF82BC",
+          "selection": "#49386F",
+          "danger": "#FF5577",
+          "canvas": "#050711",
+          "timeline": "#090C1E",
+          "track": "#151A38"
+        },
+        "typography": {
+          "family": "M PLUS Rounded 1c",
+          "file": "assets/fonts/RoundedMplus1c-Regular.ttf",
+          "size": 11
+        },
+        "geometry": {
+          "radius": {
+            "control": 10,
+            "panel": 16,
+            "menu": 12
+          },
+          "border": {
+            "width": 1
+          }
+        },
+        "materials": {
+          "panel": {
+            "type": "glass",
+            "opacity": 0.86
+          }
+        },
+        "backgrounds": {
+          "window": {
+            "type": "radial-gradient",
+            "stops": [
+              [
+                0,
+                "#20265A"
+              ],
+              [
+                0.48,
+                "#11152F"
+              ],
+              [
+                1,
+                "#080A18"
+              ]
+            ]
+          },
+          "editor": {
+            "image": "assets/backgrounds/editor.webp"
+          },
+          "home": {
+            "image": "assets/backgrounds/home.webp"
+          },
+          "splash": {
+            "image": "assets/backgrounds/splash.webp"
+          },
+          "timeline": {
+            "image": "assets/backgrounds/timeline.png"
+          },
+          "panel": {
+            "image": "assets/backgrounds/panel.webp"
+          }
+        },
+        "controls": {
+          "button": {
+            "background": {
+              "type": "linear-gradient",
+              "start": [
+                0,
+                0
+              ],
+              "end": [
+                1,
+                1
+              ],
+              "stops": [
+                [
+                  0,
+                  "#242950"
+                ],
+                [
+                  1,
+                  "#1A1F42"
+                ]
+              ]
+            },
+            "texture": "assets/textures/button.png",
+            "pressed_color": "#55376E"
+          },
+          "primary_button": {
+            "background": {
+              "type": "linear-gradient",
+              "start": [
+                0,
+                0
+              ],
+              "end": [
+                1,
+                1
+              ],
+              "stops": [
+                [
+                  0,
+                  "#7C5CFF"
+                ],
+                [
+                  0.55,
+                  "#C05DDF"
+                ],
+                [
+                  1,
+                  "#FF5CA8"
+                ]
+              ]
+            },
+            "texture": "assets/textures/primary_button.png"
+          },
+          "menu": {
+            "background": {
+              "type": "linear-gradient",
+              "start": [
+                0,
+                0
+              ],
+              "end": [
+                0,
+                1
+              ],
+              "stops": [
+                [
+                  0,
+                  "#1C2146"
+                ],
+                [
+                  1,
+                  "#0D1026"
+                ]
+              ]
+            },
+            "texture": "assets/textures/menu.png"
+          }
+        },
+        "animations": {
+          "button": {
+            "press": "glow",
+            "duration": 220,
+            "distance": 3,
+            "glow_color": "#FF5CA8"
+          },
+          "menu": {
+            "open": "fade",
+            "duration": 180
+          }
+        },
+        "clip_colors": {
+          "video": "#5547A8",
+          "recording": "#315E9B",
+          "audio": "#217B82",
+          "text": "#A33D7A",
+          "image": "#3E6D9E",
+          "effect": "#743DA2",
+          "transition": "#C05DDF",
+          "tutorial_cursor": "#E34B92",
+          "tutorial_camera": "#347A91",
+          "composition": "#6D55C7",
+          "scene": "#6554B2"
+        },
+        "asset_colors": {
+          "video": "#3C4F91",
+          "audio": "#217B82",
+          "text": "#A33D7A",
+          "composition": "#6554B2",
+          "effect": "#743DA2",
+          "transition": "#C05DDF",
+          "preparing": "#2A335F"
+        },
+        "timeline_colors": {
+          "ruler": "#9CA4D8",
+          "marker": "#55DDF2",
+          "selected_border": "#FFFFFF",
+          "clip_border": "#9A83FF",
+          "clip_text": "#FAF8FF",
+          "keyframe": "#FFB5DA",
+          "selected_keyframe": "#55DDF2",
+          "trim_handle": "#F6F4FF"
+        },
+        "canvas": {
+          "guide": "#55DDF2"
+        },
+        "recording": {
+          "countdown_background": "#090C1E",
+          "countdown_text": "#F6F4FF",
+          "paused": "#FFD166"
+        },
+        "icons": {
+          "media": "assets/icons/media.svg",
+          "audio": "assets/icons/audio.svg",
+          "text": "assets/icons/text.svg",
+          "transition": "assets/icons/transition.svg",
+          "effects": "assets/icons/effects.svg",
+          "import": "assets/icons/import.svg",
+          "record": "assets/icons/record.svg",
+          "tutorial": "assets/icons/tutorial.svg",
+          "ui": "assets/icons/ui.svg",
+          "cursor": "assets/icons/cursor.svg",
+          "camera": "assets/icons/camera.svg",
+          "sub": "assets/icons/sub.svg",
+          "smart": "assets/icons/smart.svg",
+          "save": "assets/icons/save.svg",
+          "home": "assets/icons/home.svg",
+          "export": "assets/icons/export.svg",
+          "split": "assets/icons/split.svg",
+          "duplicate": "assets/icons/duplicate.svg",
+          "delete": "assets/icons/delete.svg",
+          "undo": "assets/icons/undo.svg",
+          "redo": "assets/icons/redo.svg",
+          "play": "assets/icons/play.svg",
+          "pause": "assets/icons/pause.svg",
+          "back": "assets/icons/back.svg",
+          "forward": "assets/icons/forward.svg",
+          "fit": "assets/icons/fit.svg",
+          "fullscreen": "assets/icons/fullscreen.svg",
+          "guide": "assets/icons/guide.svg",
+          "zoom_in": "assets/icons/zoom_in.svg",
+          "zoom_out": "assets/icons/zoom_out.svg",
+          "marker": "assets/icons/marker.svg",
+          "keyframe": "assets/icons/keyframe.svg",
+          "lock": "assets/icons/lock.svg",
+          "eye": "assets/icons/eye.svg",
+          "mute": "assets/icons/mute.svg",
+          "default": "assets/icons/default.svg"
+        },
+        "marketplace": {
+          "preview": "preview.png",
+          "tags": [
+            "anime",
+            "sakura",
+            "neón",
+            "glass",
+            "oscuro",
+            "iconos completos"
+          ]
+        }
+      },
+      "revision": "693fde80d78bd1c93df0a418816f175b84075e77",
+      "assets": [
+        {
+          "path": "FONT_LICENSE.md",
+          "size": 4397,
+          "sha256": "67f64c5509e5151796599e3ad47c3131cbe0c80c4f9430b90236a1249c2eacc9"
+        },
+        {
+          "path": "assets/backgrounds/editor.webp",
+          "size": 54736,
+          "sha256": "e3c99d4e015bdf769eb3b4bb0788dce8a1e327eb8ee7a13d7162c515244b50c5"
+        },
+        {
+          "path": "assets/backgrounds/home.webp",
+          "size": 101314,
+          "sha256": "2ca799cca3e6bee2962fa91a14358eb05f5be1cd0cf548239dae35145d3d2b6d"
+        },
+        {
+          "path": "assets/backgrounds/panel.webp",
+          "size": 3198,
+          "sha256": "dcac463e5096ad426ddc0b38c9c08860a7262029c0b49baea9301938494ad9b1"
+        },
+        {
+          "path": "assets/backgrounds/splash.webp",
+          "size": 64618,
+          "sha256": "4cf35304b550ce76daf9211e81aec06e3b8a508acd1b81353abe78497d3c30bb"
+        },
+        {
+          "path": "assets/backgrounds/timeline.png",
+          "size": 4474,
+          "sha256": "5990603bdfc83e6d062aeda3a289072c0f904583b263902a6333847ab0cca1e2"
+        },
+        {
+          "path": "assets/fonts/RoundedMplus1c-Regular.ttf",
+          "size": 3389792,
+          "sha256": "b75708b53e45b06d17d470aeeca5b766e3d1b3999f03f13ec4eb863ca846c14c"
+        },
+        {
+          "path": "assets/icons/audio.svg",
+          "size": 613,
+          "sha256": "3f3e60f47365c0e062381235f864cac1d75b233f92a0063ba0c1e4edc272c57c"
+        },
+        {
+          "path": "assets/icons/back.svg",
+          "size": 572,
+          "sha256": "a37d8b044a9240f9ef8d2006edf5b7820e5af53e1453d509c6e9835f0a7afb9f"
+        },
+        {
+          "path": "assets/icons/camera.svg",
+          "size": 679,
+          "sha256": "ee9cfe71cec9baf8380f118932b21c8d59aa9bc0f4d48221191e0a246291257f"
+        },
+        {
+          "path": "assets/icons/cursor.svg",
+          "size": 637,
+          "sha256": "75348e47379377e40587d4c47c9474b86b1b6384e86d012b530858aeb092f988"
+        },
+        {
+          "path": "assets/icons/default.svg",
+          "size": 208,
+          "sha256": "e94ccbc07b1ea9f507c09088b73f6800bf885fee29ceb214f85f5cbe2658e47f"
+        },
+        {
+          "path": "assets/icons/delete.svg",
+          "size": 588,
+          "sha256": "3191005102aa235b04fc46005b3079d32116a1626fb03bd33e76581086f010d6"
+        },
+        {
+          "path": "assets/icons/duplicate.svg",
+          "size": 649,
+          "sha256": "0f9f11720a6d196b33ade690783b46f1d81589dfa1f4f66e5d4aba79cd4fd96e"
+        },
+        {
+          "path": "assets/icons/effects.svg",
+          "size": 748,
+          "sha256": "a002e8445cf28e6c9cb7de6a1ec479f8a7d08f5f89d1da1956527ad2720b716b"
+        },
+        {
+          "path": "assets/icons/export.svg",
+          "size": 650,
+          "sha256": "d1f1d77e1823f511586e754a60cdb01a5da905251d8a987a0e5d7f8e6595a54e"
+        },
+        {
+          "path": "assets/icons/eye.svg",
+          "size": 668,
+          "sha256": "6817d3745dd41c7315702850640161ea15544bf47f15cec6385b1803c6612c0c"
+        },
+        {
+          "path": "assets/icons/fit.svg",
+          "size": 614,
+          "sha256": "f93834e289c6716215beed2aa1bd1d34c9ed7d91cc66a11c6ec323c93c682c1b"
+        },
+        {
+          "path": "assets/icons/forward.svg",
+          "size": 574,
+          "sha256": "27cb34a4924a1da4fc828a3d09c7447e1fb640a212665e9a3703afa2a3dd6384"
+        },
+        {
+          "path": "assets/icons/fullscreen.svg",
+          "size": 614,
+          "sha256": "6bc42eb79cb0f0edef5a429e444a27913f52daa47bb7984817834b6eb22dd728"
+        },
+        {
+          "path": "assets/icons/guide.svg",
+          "size": 647,
+          "sha256": "d91e31561d9e37cd7f9651a43ef771b49fd52c72623d615bf46bd97921440bd2"
+        },
+        {
+          "path": "assets/icons/home.svg",
+          "size": 611,
+          "sha256": "a89c88e1220504e5880c15c9e0d83f6c0405f26f055ee07e1614fe6bf62c4b45"
+        },
+        {
+          "path": "assets/icons/import.svg",
+          "size": 694,
+          "sha256": "fd7427b1e3f55b7fbc88502f041dea41f34885292041204049f0c513bd2a8977"
+        },
+        {
+          "path": "assets/icons/keyframe.svg",
+          "size": 616,
+          "sha256": "a468d4b5a4e88dc795e0e733a75041cb58685ec08651b969e2f41ef60bb56807"
+        },
+        {
+          "path": "assets/icons/lock.svg",
+          "size": 605,
+          "sha256": "1159cbf50a890b2c7a7cabb89e72ffa79ed1240c6ac73c0f305647226e6b2187"
+        },
+        {
+          "path": "assets/icons/marker.svg",
+          "size": 625,
+          "sha256": "45b798a8e9d9e63fed979d81c833e1743d0371ac92086a7e9894f182e19232d9"
+        },
+        {
+          "path": "assets/icons/media.svg",
+          "size": 695,
+          "sha256": "92f63b3f1bb257cdcbaaa045f2cd1f261a013a5d3c8e54186b88480d5f6be1cf"
+        },
+        {
+          "path": "assets/icons/mute.svg",
+          "size": 671,
+          "sha256": "03ef0a099fa83a1a62f66df7b509cbafae66383054f4e5c25e3375161bf2813e"
+        },
+        {
+          "path": "assets/icons/pause.svg",
+          "size": 620,
+          "sha256": "a4f9c16ef6775b26796a6ecea32cd8b1304260847423d2dbfde9a9bbe24a89bf"
+        },
+        {
+          "path": "assets/icons/play.svg",
+          "size": 609,
+          "sha256": "277a75d3c8635ff4f646bbe8f2a07be203d8569121e817a343fd4b9ac9db11cb"
+        },
+        {
+          "path": "assets/icons/record.svg",
+          "size": 615,
+          "sha256": "23dd351871d7bd4209b0dd526dec1a6c715414da00f89f9360de8b18e5a04e78"
+        },
+        {
+          "path": "assets/icons/redo.svg",
+          "size": 601,
+          "sha256": "286b9dcf654861a443590bacad63b0648ba55c026f7e3881f474de769cee0a8c"
+        },
+        {
+          "path": "assets/icons/save.svg",
+          "size": 615,
+          "sha256": "64de509668d37f72c199385ac0ead93344a38cf55b0517aa8c195c17459203b3"
+        },
+        {
+          "path": "assets/icons/smart.svg",
+          "size": 722,
+          "sha256": "361b4ef5452ad1d087796c60687c48550519f1e939417a29f4f030031f27cff6"
+        },
+        {
+          "path": "assets/icons/split.svg",
+          "size": 621,
+          "sha256": "1182b8758173a3f752891a3b9575f558fbc8114a0391ac677a78fe6140c68fab"
+        },
+        {
+          "path": "assets/icons/sub.svg",
+          "size": 659,
+          "sha256": "3c2b2c9a1c98eaea000a7dc109d1c87f290b60aacb4894569bf13707541d4bbf"
+        },
+        {
+          "path": "assets/icons/text.svg",
+          "size": 617,
+          "sha256": "5cdac798bb5d56a82b9de274b2fd958875c0f235f0b32fb087ab48e31b2e14f2"
+        },
+        {
+          "path": "assets/icons/transition.svg",
+          "size": 687,
+          "sha256": "506cbc1be0ae3d058c053bbbe384a73af6129b5a27dc63ad3f62fedf9bd406da"
+        },
+        {
+          "path": "assets/icons/tutorial.svg",
+          "size": 697,
+          "sha256": "564fa82ff45e1ec150f13100255facb139fa1623682ad77eef1b12d5df7c3ccf"
+        },
+        {
+          "path": "assets/icons/ui.svg",
+          "size": 683,
+          "sha256": "1d7e27b2ebb1415b10e0725b6e5048873f9f15c6252eaf736c3133dbbc66155b"
+        },
+        {
+          "path": "assets/icons/undo.svg",
+          "size": 599,
+          "sha256": "38b58d2fb3ffb9a861f849aab3d31886a8757407690aeb63c7d29f3ed9d37ec7"
+        },
+        {
+          "path": "assets/icons/zoom_in.svg",
+          "size": 657,
+          "sha256": "989dd22bd4a57b052583defd8913fe091698cc3e3e55fa9159837e502a278999"
+        },
+        {
+          "path": "assets/icons/zoom_out.svg",
+          "size": 626,
+          "sha256": "586fa859674ff58ab07bfb14c09962b2c9567f636c0fee02b39add4ee2834f68"
+        },
+        {
+          "path": "assets/textures/button.png",
+          "size": 869,
+          "sha256": "834db91e1b68d5d47834442ed170c5c8551df63a1f4b58688416180b8178bd10"
+        },
+        {
+          "path": "assets/textures/menu.png",
+          "size": 1158,
+          "sha256": "439416d5a3c8b70c56bd24968e83bb81156b4ad74a20b23ca29d7bf7f4512ff1"
+        },
+        {
+          "path": "assets/textures/primary_button.png",
+          "size": 2068,
+          "sha256": "55d0fe19e0915fed0ac305c33652e461cfca4cba5436583d79ed5450c90722b1"
+        },
+        {
+          "path": "info.md",
+          "size": 1653,
+          "sha256": "b6c7886b837996808e8270a5328a75b322cfdf890ba9d59f8e11a76a2e64e258"
+        },
+        {
+          "path": "preview.png",
+          "size": 451000,
+          "sha256": "0e2e1aaa0f8c4acf5ec2e9806308d71d8fdbb9c7742687d5d3f3d35222366f5a"
+        }
+      ],
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-693fde80d78b/edgajuman-sakura-pulse.zip"
+    }
+  ]
+}
