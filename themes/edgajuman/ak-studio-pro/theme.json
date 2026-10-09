@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "ak-studio-pro",
   "name": "AK Studio Pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "edgajuman",
   "min_app_version": "2.2.0",
   "base": "StudioBlue",

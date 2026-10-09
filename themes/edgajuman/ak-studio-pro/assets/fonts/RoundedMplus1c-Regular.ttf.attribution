@@ -1,8 +1,8 @@
 asset: RoundedMplus1c-Regular.ttf
 title: AK Studio Pro RoundedMplus1c-Regular
-author: M+ FONTS PROJECT
+author: The Rounded M+ Project Authors
 source: https://github.com/google/fonts/tree/main/ofl/mplusrounded1c
 license: OFL-1.1
 license-file: FONT_LICENSE.md
 added: 2026-10-09 by AK Screen
-notes: Original theme resource; preview is an illustration. Fonts preserved unmodified.
+notes: Unmodified M PLUS Rounded 1c font from the existing Sakura Pulse package; copyright and SIL OFL preserved in FONT_LICENSE.md.

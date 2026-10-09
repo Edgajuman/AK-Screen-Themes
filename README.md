@@ -6,9 +6,9 @@ Temas comunitarios revisados para **AK Screen**. Cada autor conserva sus paquete
 
 ## AK Studio Pro · ejemplo avanzado
 
-![Vista ilustrativa de AK Studio Pro](themes/edgajuman/ak-studio-pro/preview.png)
+![AK Studio Pro en AK Screen 2.2](themes/edgajuman/ak-studio-pro/preview.png)
 
-[AK Studio Pro](themes/edgajuman/ak-studio-pro/) requiere AK Screen 2.2.0. Incluye 47 colores, 11 métricas, disposición propia de paneles, hoja CSS nativa, 24 SVG originales, fuente con licencia, fondo WebP y carga GIF animada. La imagen anterior es una ilustración del paquete; las imágenes de 2.1 que siguen son capturas reales.
+[AK Studio Pro](themes/edgajuman/ak-studio-pro/) requiere AK Screen 2.2.0. Incluye 47 colores, 11 métricas, disposición propia de paneles, hoja CSS nativa, 24 SVG originales, fuente con licencia, fondo WebP y carga GIF animada. La imagen anterior es una captura real de AK Screen 2.2; las imágenes siguientes muestran los temas en 2.1.
 
 ## Temas disponibles
 
@@ -25,7 +25,7 @@ Las vistas previas de Sakura Pulse y Aurora Glass muestran capturas reales de AK
 
 ## Instalar
 
-En AK Screen 2.1 o posterior: **Temas → Catálogo → Actualizar → Instalar y aplicar**. Puedes ver la imagen de vista previa antes de instalar. La app instala el paquete completo en la carpeta local de temas que tenga configurada cada usuario, conserva sus componentes y verifica tamaño y SHA-256. La ubicación se obtiene de la carpeta Documentos del usuario que ejecuta la app en su propio equipo; nunca se usa la ruta personal del creador. Puedes cambiarla desde Configuración. Los temas instalados funcionan sin conexión.
+En AK Screen 2.2: **Configuración → Temas y catálogo → Actualizar → Instalar y aplicar**. En 2.1, abre **Temas → Catálogo**. Puedes ver la imagen de vista previa antes de instalar. La app instala el paquete completo en la carpeta local de temas que tenga configurada cada usuario, conserva sus componentes y verifica tamaño y SHA-256. La ubicación se obtiene de la carpeta Documentos del usuario que ejecuta la app en su propio equipo; nunca se usa la ruta personal del creador. Puedes cambiarla desde Configuración. Los temas instalados funcionan sin conexión.
 
 **En este repositorio de GitHub**, los archivos se organizan en `themes/autor/tema/`. Esa es la estructura que debes usar al crear tu fork o pull request; no debes crear carpetas Documentos dentro del repositorio.
 
