@@ -83,7 +83,7 @@ Se aceptan además estos alias del repositorio anterior: media, audio, text, tra
 
 ## Fondos y pantalla de carga
 
-`editor_background` y `splash_background` aceptan PNG/JPEG/GIF/WebP; GIF y WebP animado mantienen sus fotogramas. En Temas y apariencia el usuario puede sustituir cada fondo, ajustar opacidad 0–100%, desactivar el inicio o cambiar su duración mínima (0,5–6 s). El inicio aparece antes de inicializar el editor y dispositivos multimedia.
+`editor_background` y `splash_background` aceptan PNG/JPEG/GIF/WebP; GIF y WebP animado mantienen sus fotogramas. En Temas y apariencia el usuario puede sustituir cada fondo, ajustar la opacidad del fondo del editor (0–100%), desactivar el inicio o cambiar su duración mínima (0,5–6 s). El inicio aparece antes de inicializar el editor y dispositivos multimedia.
 
 Límites de decodificación: 4096×4096, 16 MB de archivo, 120 fotogramas y 64 MB decodificados. Si se supera un límite se informa el error y se mantiene operativo el editor. Son fondos decorativos: no aparecen en el MP4.
 
