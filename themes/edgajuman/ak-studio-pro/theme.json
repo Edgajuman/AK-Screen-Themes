@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "id": "ak-studio-pro",
+  "name": "AK Studio Pro",
+  "version": "1.0.0",
+  "author": "edgajuman",
+  "min_app_version": "2.2.0",
+  "base": "StudioBlue",
+  "description": "Espacio de composicion con superficie continua, paleta azul/cian, curvas de color, 24 iconos originales, fuente local, estilos nativos y carga animada.",
+  "colors": {
+    "app_bg": "#10151e",
+    "header_bg": "#0e1621",
+    "panel_bg": "#18212e",
+    "tab_bg": "#18212e",
+    "tab_text": "#a8b9cf",
+    "tab_text_active": "#e9f3ff",
+    "focus": "#49b6ff",
+    "accent": "#49b6ff",
+    "accent_hover": "#78c9ff",
+    "text": "#e9f3ff",
+    "text_dim": "#a8b9cf",
+    "text_faint": "#6e6e6e",
+    "icon": "#a8b9cf",
+    "icon_active": "#49b6ff",
+    "hover": "#2b3e53",
+    "pressed": "#36536f",
+    "field_bg": "#101923",
+    "field_border": "#35475a",
+    "separator": "#35475a",
+    "row_alt": "#1e2c3c",
+    "row_selected": "#315579",
+    "hot_text": "#49b6ff",
+    "tl_bg": "#18212e",
+    "tl_track_bg": "#203043",
+    "tl_track_bg_alt": "#25354b",
+    "tl_header_bg": "#142030",
+    "tl_ruler_bg": "#142030",
+    "tl_ruler_tick": "#8d8d8d",
+    "tl_ruler_text": "#b0b0b0",
+    "playhead": "#9bd8ff",
+    "in_out_shade": "#3f3f3f",
+    "clip_selected_border": "#ebebeb",
+    "render_red": "#e34850",
+    "render_yellow": "#f0f04f",
+    "render_green": "#2d9d78",
+    "monitor_bg": "#0b1521",
+    "timecode": "#49b6ff",
+    "guide": "#5ee5d0",
+    "snap": "#f6b56d",
+    "graph_bg": "#101923",
+    "graph_grid": "#293b51",
+    "graph_curve": "#49b6ff",
+    "graph_velocity": "#f6b56d",
+    "graph_handle": "#92bdd9",
+    "keyframe": "#e9f3ff",
+    "danger": "#FF657A",
+    "safe_margin": "#93b6cb"
+  },
+  "preview": "preview.png",
+  "editor_background": "assets/backgrounds/editor.webp",
+  "splash_background": "assets/backgrounds/splash.gif",
+  "font": "assets/fonts/RoundedMplus1c-Regular.ttf",
+  "icons": {
+    "Play": "assets/icons/Play.svg",
+    "Pause": "assets/icons/Pause.svg",
+    "Camera": "assets/icons/Camera.svg",
+    "Trash": "assets/icons/Trash.svg",
+    "Folder": "assets/icons/Folder.svg",
+    "Keyframe": "assets/icons/Keyframe.svg",
+    "Gear": "assets/icons/Gear.svg",
+    "Bell": "assets/icons/Bell.svg",
+    "Captions": "assets/icons/Captions.svg",
+    "Selection": "assets/icons/Selection.svg",
+    "Razor": "assets/icons/Razor.svg",
+    "Export": "assets/icons/Export.svg",
+    "Undo": "assets/icons/Undo.svg",
+    "Redo": "assets/icons/Redo.svg",
+    "Eye": "assets/icons/Eye.svg",
+    "Lock": "assets/icons/Lock.svg",
+    "Mic": "assets/icons/Mic.svg",
+    "Audio": "assets/icons/Audio.svg",
+    "Workspaces": "assets/icons/Workspaces.svg",
+    "Type": "assets/icons/Type.svg",
+    "Fx": "assets/icons/Fx.svg",
+    "Marker": "assets/icons/Marker.svg",
+    "Zoom": "assets/icons/Zoom.svg",
+    "Sparkle": "assets/icons/Sparkle.svg"
+  },
+  "stylesheet": "editor.css",
+  "style": {
+    "workspace": "Studio",
+    "metrics": {
+      "radius": 0,
+      "radius_sm": 5,
+      "gap": 0,
+      "tab_h": 32,
+      "header_h": 42,
+      "control_h": 26,
+      "font_scale": 1.05,
+      "animation_time": 0.14,
+      "panel_border_width": 1,
+      "panel_border_opacity": 0.16,
+      "focus_border_opacity": 0.35
+    },
+    "layout": {
+      "Split": {
+        "vertical": true,
+        "size": {
+          "Ratio": 0.6
+        },
+        "a": {
+          "Split": {
+            "vertical": false,
+            "size": {
+              "Ratio": 0.23
+            },
+            "a": {
+              "Tabs": {
+                "panels": [
+                  "Project",
+                  "MediaBrowser",
+                  "Effects"
+                ],
+                "active": 0
+              }
+            },
+            "b": {
+              "Split": {
+                "vertical": false,
+                "size": {
+                  "Ratio": 0.67
+                },
+                "a": {
+                  "Tabs": {
+                    "panels": [
+                      "Program",
+                      "Source"
+                    ],
+                    "active": 0
+                  }
+                },
+                "b": {
+                  "Tabs": {
+                    "panels": [
+                      "Properties",
+                      "EffectControls",
+                      "Text"
+                    ],
+                    "active": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "Tabs": {
+            "panels": [
+              "Timeline"
+            ],
+            "active": 0
+          }
+        }
+      }
+    },
+    "clip_colors": {
+      "video": "#466a9c",
+      "audio": "#338f79",
+      "image": "#9564bb",
+      "text": "#c5984e",
+      "effect": "#6f62bb",
+      "sequence": "#4b8fba",
+      "tutorial_cursor": "#48b7bb",
+      "tutorial_camera": "#8a6ed8"
+    },
+    "asset_colors": {
+      "video": "#466a9c",
+      "audio": "#338f79",
+      "image": "#9564bb",
+      "text": "#c5984e",
+      "effect": "#6f62bb",
+      "sequence": "#4b8fba"
+    },
+    "timeline_colors": {
+      "ruler": "#172333",
+      "selected_border": "#9bd8ff"
+    }
+  }
+}

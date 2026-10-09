@@ -1,6 +1,6 @@
-# Esquema nativo de temas · AK Screen 2.1
+# Esquema nativo de temas · AK Screen 2.2
 
-El catálogo acepta `schema: 1` (nativo) y convierte `schema_version: 1` (formato anterior). No descargues ni modifiques manualmente themes.json: GitHub lo genera tras aceptar los cambios.
+El catálogo acepta `schema: 1` (nativo) y convierte `schema_version: 1` (formato anterior). No descargues ni modifiques manualmente los índices: GitHub lo genera tras aceptar los cambios.
 
 ## Metadatos y recursos
 
@@ -8,7 +8,7 @@ El catálogo acepta `schema: 1` (nativo) y convierte `schema_version: 1` (format
 {"schema":1,"id":"mi-tema","name":"Mi tema","author":"tu-usuario","version":"1.0.0","description":"Descripción breve","base":"dark","preview":"preview.png","colors":{"accent":"#408CFF"},"editor_background":"assets/backgrounds/editor.webp","splash_background":"assets/backgrounds/splash.gif","font":"assets/fonts/mi-fuente.ttf","icons":{"Play":"assets/icons/play.svg"},"style":{"metrics":{"radius":6,"radius_sm":4,"gap":4,"tab_h":32}}}
 ```
 
-`base`: dark, medium, light, StudioBlue u oled. Las rutas siempre son relativas al paquete. Las propiedades no presentes heredan la base. `assets`, `revision` y los SHA-256 los genera el catálogo; no los escribas a mano. La plantilla [AK Midnight](themes/edgajuman/ak-midnight/theme.json) enumera todos los colores.
+`base`: dark, medium, light, StudioBlue u oled. Las rutas siempre son relativas al paquete. Las propiedades no presentes heredan la base. `assets`, `revision` y los SHA-256 los genera el catálogo; no los escribas a mano. La plantilla [AK Studio Pro](themes/edgajuman/ak-studio-pro/theme.json) enumera los 47 colores, todas las métricas y un layout completo. [AK Midnight](themes/edgajuman/ak-midnight/theme.json) enumera todos los colores.
 
 ## Colores disponibles
 
@@ -90,3 +90,33 @@ Límites de decodificación: 4096×4096, 16 MB de archivo, 120 fotogramas y 64 M
 ## Diferencias con el formato anterior
 
 Se aplican la paleta, radios, el color de pulsación, los colores de clips y medios, SVG, fuentes y fondos Editor/Splash. Los degradados declarativos de widgets, rebote/glow personalizado, texturas de botones, el fondo Home y fondos distintos por panel no tienen aún un equivalente en el editor Rust. Se conservan sus archivos y metadatos sin anunciarlos como activos. Usa las propiedades nativas de esta guía para obtener un resultado reproducible.
+
+
+## Novedades de 2.2: estilos, curvas y disposición
+
+Declara `min_app_version: "2.2.0"` para usar las nuevas capacidades. `themes.json` conserva el catálogo compatible con 2.1; `themes-v2.json` contiene el catálogo completo usado por 2.2 y la web. Así un tema nuevo no impide instalar los anteriores.
+
+Los nueve colores adicionales son `guide`, `snap`, `safe_margin`, `graph_bg`, `graph_grid`, `graph_curve`, `graph_velocity`, `graph_handle` y `keyframe`.
+
+Las once métricas nativas son `radius`, `radius_sm`, `gap`, `tab_h`, `header_h`, `control_h`, `font_scale`, `animation_time`, `panel_border_width`, `panel_border_opacity` y `focus_border_opacity`. La superficie continua usa gap=0 y bordes de baja opacidad; puedes cambiarlo en el tema. La escala de fuente afecta widgets estándar; algunas etiquetas pintadas mantienen su tamaño.
+
+`style.workspace` selecciona un espacio existente. `style.layout` define el árbol completo con nodos `Split` y `Tabs`: orientación, proporciones, grupos y pestaña activa. El ejemplo AK Studio Pro incluye un árbol listo para adaptar. No repitas paneles ni dejes grupos vacíos. Máximo 32 niveles, 127 nodos y 26 tipos de panel. La posición se puede reorganizar después desde el editor y se recuerda por espacio de trabajo.
+
+`stylesheet: "editor.css"` admite una hoja local de hasta 64 KiB. También se acepta `style.css`. No es CSS de navegador: se traduce a los componentes nativos y rechaza scripts, imports, URLs o selectores desconocidos.
+
+```css
+:root { --accent: #49b6ff; --graph-curve: #49b6ff; --snap: #f6b56d; }
+#editor { background-color: #10151e; }
+.panel { gap: 0px; border-width: 1px; border-opacity: 0.16; focus-opacity: 0.35; border-radius: 0px; }
+.tabs { background-color: #18212e; color: #a8b9cf; height: 32px; }
+.toolbar { height: 42px; }
+.timeline { background-color: #18212e; }
+.button { background-color: #49b6ff; border-radius: 5px; height: 26px; }
+.input { background-color: #101923; border-color: #35475a; border-radius: 5px; }
+.menu { animation-duration: 0.14s; }
+.text { color: #e9f3ff; font-scale: 1.05; }
+```
+
+`:root` admite los colores y métricas del esquema mediante nombres `--token-con-guiones`. Las propiedades admitidas por cada selector se muestran en el ejemplo y se validan al instalar. Un tema cambia presentación y distribución; no añade herramientas ejecutables ni modifica exportaciones.
+
+La opacidad del fondo, su sustitución personal y la duración del splash se configuran por usuario en Configuración → Temas y apariencia. Se conservan entre temas para respetar las preferencias del usuario.

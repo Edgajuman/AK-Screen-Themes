@@ -4,6 +4,12 @@ Temas comunitarios revisados para **AK Screen**. Cada autor conserva sus paquete
 
 [**Explorar el catálogo con vistas previas →**](https://edgajuman.github.io/AK-Screen-Themes/) · [Crear un tema](CONTRIBUTING.md) · [Descargar AK Screen](https://github.com/Edgajuman/AKScreen-Downloads/releases)
 
+## AK Studio Pro · ejemplo avanzado
+
+![Vista ilustrativa de AK Studio Pro](themes/edgajuman/ak-studio-pro/preview.png)
+
+[AK Studio Pro](themes/edgajuman/ak-studio-pro/) requiere AK Screen 2.2.0. Incluye 47 colores, 11 métricas, disposición propia de paneles, hoja CSS nativa, 24 SVG originales, fuente con licencia, fondo WebP y carga GIF animada. La imagen anterior es una ilustración del paquete; las imágenes de 2.1 que siguen son capturas reales.
+
 ## Temas disponibles
 
 | Sakura Pulse | Aurora Glass |
@@ -13,7 +19,7 @@ Temas comunitarios revisados para **AK Screen**. Cada autor conserva sus paquete
 
 También incluimos **AK Midnight**, una plantilla nativa con los 38 colores del editor y medidas configurables.
 
-Las vistas previas muestran capturas reales de AK Screen 2.1 con contenido de demostración. La pantalla de carga también puede personalizarse:
+Las vistas previas de Sakura Pulse y Aurora Glass muestran capturas reales de AK Screen 2.1 con contenido de demostración. La pantalla de carga también puede personalizarse:
 
 ![Pantalla de carga real con Sakura Pulse](themes/edgajuman/sakura-pulse/splash-preview.png)
 

@@ -1,0 +1,11 @@
+/* AK Studio Pro: native editor components */
+:root { --accent: #49b6ff; --accent-hover: #78c9ff; --text: #e9f3ff; --text-dim: #9da9bb; --focus-border-opacity: 0.2; --graph-bg: #101721; --graph-grid: #2b394e; --graph-curve: #59b1ff; --graph-velocity: #ffc47b; --graph-handle: #a4bad7; --keyframe: #e9f3ff; }
+#editor { background-color: #151a22; }
+.panel { background-color: #1b222d; gap: 0px; border-width: 1px; border-opacity: 0.16; border-radius: 0px; }
+.tabs { background-color: #1b222d; color: #b7c3d5; height: 32px; }
+.toolbar { background-color: #111721; height: 42px; }
+.timeline { background-color: #1b222d; }
+.input { background-color: #101721; border-color: #324154; border-radius: 4px; }
+.button { background-color: #49b6ff; border-radius: 4px; height: 26px; }
+.text { color: #e9f3ff; font-scale: 1.05; }
+.menu { animation-duration: 0.12s; }

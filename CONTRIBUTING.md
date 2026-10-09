@@ -42,3 +42,7 @@ Conserva la licencia de cada fuente. El arte debe ser propio o tener una licenci
 El workflow **Catálogo de temas** valida `main`, fija la revisión de origen, calcula los SHA-256, genera ZIP independientes y publica el catálogo web. La aplicación descarga recursos de esa revisión concreta, evitando mezclar archivos de actualizaciones distintas. No hay API propia ni cuentas dentro de la aplicación.
 
 El editor admite colores, medidas, iconos SVG, fuentes y fondos. Las antiguas animaciones de widgets, texturas de botones y degradados declarativos no tienen equivalente directo en el editor Rust: no se anuncian como funciones activas. Los archivos se conservan para que puedan reutilizarse en versiones futuras.
+
+## Plantilla avanzada
+
+Usa [AK Studio Pro](themes/edgajuman/ak-studio-pro/theme.json) para nuevas capacidades de 2.2: CSS, layout, curvas e iconos. Conserva `min_app_version: "2.2.0"`, cambia autor/id y aporta licencias de todos los componentes. Los índices y hashes se generan tras la revisión. El flujo fork → pull request → aceptación permanece igual.
