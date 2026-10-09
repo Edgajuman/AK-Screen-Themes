@@ -81,7 +81,7 @@
           "sequence": "#795B9B"
         }
       },
-      "revision": "1e94d98a2bb2059ce8c1b1d3579113ded11dc28e",
+      "revision": "3e8ab9e0c81b830f4a0557480b185b662e47bd5a",
       "assets": [
         {
           "path": "LICENSE.txt",
@@ -104,12 +104,12 @@
           "sha256": "043e0df70bb2de16ea31087b1d6efdb48eaf3d82e468015c2d0d65bcc1515c09"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-1e94d98a2bb2/edgajuman-ak-midnight.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-3e8ab9e0c81b/edgajuman-ak-midnight.zip"
     },
     {
       "id": "ak-studio-pro",
       "name": "AK Studio Pro",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Espacio de composicion con superficie continua, paleta azul/cian, curvas de color, 24 iconos originales, fuente local, estilos nativos y carga animada.",
       "schema": 1,
       "author": "edgajuman",
@@ -294,7 +294,7 @@
           "selected_border": "#9bd8ff"
         }
       },
-      "revision": "1e94d98a2bb2059ce8c1b1d3579113ded11dc28e",
+      "revision": "3e8ab9e0c81b830f4a0557480b185b662e47bd5a",
       "assets": [
         {
           "path": "FONT_LICENSE.md",
@@ -333,8 +333,8 @@
         },
         {
           "path": "assets/fonts/RoundedMplus1c-Regular.ttf.attribution",
-          "size": 338,
-          "sha256": "387b1beb8501270eae4570c9ed50a6bc5e26c2d68f7eaa37be37bef636fb7272"
+          "size": 397,
+          "sha256": "3bfc640ba2618da83daa15273be92d12116b2fdadbbc200be7e808a5de1926c0"
         },
         {
           "path": "assets/icons/Audio.svg",
@@ -588,18 +588,18 @@
         },
         {
           "path": "info.md",
-          "size": 1225,
-          "sha256": "3c6beb72d7a51e0930dfb4508292dda34a3fe8b21ed243f269890f019718d0ad"
+          "size": 1312,
+          "sha256": "e50b9d709ac3f32acd8552a74f83d3bd4b888d5137d0d3e61e95947ea27802a2"
         },
         {
           "path": "preview.png",
-          "size": 43619,
-          "sha256": "72f1f9f131264cc48d2bbc1010e195392bba2f5db7c2521a7c1479c3a2acda40"
+          "size": 394966,
+          "sha256": "1bc0d89396b10867f1d774602dbfa146ec3d6b437a9b051363dbc63718053db4"
         },
         {
           "path": "preview.png.attribution",
-          "size": 273,
-          "sha256": "82e3a5ff4c6ac719ead1b3cbe1af5b82b9d128d4e47f76935c0d8ad00c7c509b"
+          "size": 317,
+          "sha256": "4a93fa5e5dd2914e1d23da4481e3f731d425191b9a9eec211124ea5d0058ba2c"
         },
         {
           "path": "theme.json.attribution",
@@ -607,7 +607,7 @@
           "sha256": "79e2bdb980592fb4669c4fe0e322465ec5825a33e8be91a091202decbe588a26"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-1e94d98a2bb2/edgajuman-ak-studio-pro.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-3e8ab9e0c81b/edgajuman-ak-studio-pro.zip"
     },
     {
       "id": "aurora-glass",
@@ -770,7 +770,7 @@
           ]
         }
       },
-      "revision": "1e94d98a2bb2059ce8c1b1d3579113ded11dc28e",
+      "revision": "3e8ab9e0c81b830f4a0557480b185b662e47bd5a",
       "assets": [
         {
           "path": "assets/icons/cursor.svg",
@@ -793,7 +793,7 @@
           "sha256": "6264ce8afebf1443b29dff0ba84713cb7fea16acc8c2fedbc9cddeb5bc59248b"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-1e94d98a2bb2/edgajuman-aurora-glass.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-3e8ab9e0c81b/edgajuman-aurora-glass.zip"
     },
     {
       "id": "sakura-pulse",
@@ -1125,7 +1125,7 @@
           ]
         }
       },
-      "revision": "1e94d98a2bb2059ce8c1b1d3579113ded11dc28e",
+      "revision": "3e8ab9e0c81b830f4a0557480b185b662e47bd5a",
       "assets": [
         {
           "path": "FONT_LICENSE.md",
@@ -1383,7 +1383,7 @@
           "sha256": "c4a4e53fab0a47cbe7bff012283656e61d393f55119544eda99aa5447a570656"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-1e94d98a2bb2/edgajuman-sakura-pulse.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-3e8ab9e0c81b/edgajuman-sakura-pulse.zip"
     }
   ]
 }
