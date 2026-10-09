@@ -33,6 +33,8 @@ python scripts/catalog.py --check
 
 Se admiten como máximo 256 componentes, 64 MB por paquete y 16 MB por archivo (8 MB por fuente, 256 KB por SVG). Los nombres y rutas no pueden contener `..`, enlaces simbólicos ni rutas absolutas. No se permiten ejecutables, scripts ni referencias externas dentro de los SVG.
 
+Para probar antes del PR, ejecuta `python scripts/catalog.py`, extrae el ZIP creado en packages/ e importa su theme.json en AK Screen. Ese ZIP ya contiene el manifiesto de componentes y sus checksums. Envía únicamente tu carpeta de autor; no incluyas el catálogo generado en el pull request.
+
 Conserva la licencia de cada fuente. El arte debe ser propio o tener una licencia que permita redistribuirlo. Describe autoría, origen y licencia en `info.md`; añade las licencias de terceros dentro del paquete.
 
 ## Después de la aprobación
