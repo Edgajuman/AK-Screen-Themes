@@ -15,7 +15,9 @@ También incluimos **AK Midnight**, una plantilla nativa con los 38 colores del 
 
 ## Instalar
 
-En AK Screen 2.1 o posterior: **Temas → Catálogo → Actualizar → Instalar y aplicar**. Puedes ver la imagen de vista previa antes de instalar. La descarga conserva cada componente en `Documentos/AK Screen/Temas/autor/tema/` y verifica tamaño y SHA-256. Los temas instalados funcionan sin conexión.
+En AK Screen 2.1 o posterior: **Temas → Catálogo → Actualizar → Instalar y aplicar**. Puedes ver la imagen de vista previa antes de instalar. La app instala el paquete completo en la carpeta local de temas que tenga configurada cada usuario, conserva sus componentes y verifica tamaño y SHA-256. Los temas instalados funcionan sin conexión.
+
+**En este repositorio de GitHub**, los archivos se organizan en `themes/autor/tema/`. Esa es la estructura que debes usar al crear tu fork o pull request; no debes crear carpetas Documentos dentro del repositorio.
 
 Desde la web: descarga el ZIP, extráelo y selecciona su `theme.json` en **Importar paquete / JSON**. El instalador del tema no ejecuta scripts ni instala fuentes en Windows; las fuentes solo se usan dentro de AK Screen.
 
