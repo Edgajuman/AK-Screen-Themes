@@ -40,3 +40,8 @@ class CatalogueTests(unittest.TestCase):
             with self.assertRaises(ValueError): catalog.validate_css(css)
         with self.assertRaises(ValueError): catalog.validate_layout({'Tabs':{'panels':['Program','Program'],'active':0}})
         with self.assertRaises(ValueError): catalog.validate_layout({'Tabs':{'panels':[],'active':0}})
+
+    def test_every_native_akscreen_panel_is_available_to_the_theme_studio(self):
+        # Keep the catalogue validator in sync with ui-egui::dock::PanelKind.
+        for panel in ('Camera', 'Extensions'):
+            catalog.validate_layout({'Tabs':{'panels':[panel], 'active':0}})

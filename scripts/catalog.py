@@ -24,7 +24,7 @@ CSS_PROPERTIES = {
  '.button':{'border-radius','height','background-color'},'.input':{'border-radius','background-color','border-color'},
  '.menu':{'animation-duration'},'.text':{'color','font-scale'}
 }
-PANELS = {'Project','MediaBrowser','Libraries','Info','Effects','Markers','History','Source','EffectControls','AudioClipMixer','Metadata','Program','Timeline','Tools','AudioMeters','AudioTrackMixer','LumetriColor','LumetriScopes','EssentialGraphics','EssentialSound','Properties','Text','Events','Progress','ReferenceMonitor','Timecode'}
+PANELS = {'Project','MediaBrowser','Libraries','Info','Effects','Markers','History','Source','EffectControls','AudioClipMixer','Metadata','Program','Timeline','Tools','AudioMeters','AudioTrackMixer','LumetriColor','LumetriScopes','EssentialGraphics','EssentialSound','Properties','Text','Events','Progress','ReferenceMonitor','Timecode','Camera','Extensions'}
 
 def validate_css(text):
     if len(text.encode('utf-8'))>64*1024: raise ValueError('CSS demasiado grande')

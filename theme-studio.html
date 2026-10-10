@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Diseña, previsualiza y exporta temas compatibles con AK Screen 2.3.0.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%234c94ff%27/%3E%3Ctext x=%2750%25%27 y=%2758%25%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2732%27 font-weight=%27bold%27 fill=%27white%27%3EAK%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="Crea temas para AK Screen 2.3.0 con vista previa nativa y exportación para el catálogo.">
   <title>Constructor de temas · AK Screen</title>
   <link rel="stylesheet" href="theme-studio.css">
 </head>
@@ -13,10 +14,10 @@
     <a class="brand" href="index.html" aria-label="AK Screen Themes, volver al catálogo"><span class="brand-mark">AK</span><span>AK Screen <small>THEME STUDIO</small></span></a>
     <div class="project-title"><span class="live-dot"></span><span id="theme-title">Tema sin título</span><span class="saved-state" id="saved-state">Guardado en este navegador</span></div>
     <div class="top-actions">
-      <button class="quiet-button" id="import-theme" type="button">Importar JSON</button>
+      <button class="quiet-button" id="import-theme" type="button">Importar tema</button>
       <button class="quiet-button" id="export-json" type="button">JSON</button>
       <button class="primary-button" id="export-zip" type="button"><span>↓</span> Exportar ZIP para PR</button>
-      <input id="import-file" type="file" accept="application/json,.json" hidden>
+      <input id="import-file" type="file" accept="application/json,.json,application/zip,.zip" hidden>
     </div>
   </header>
 
@@ -49,7 +50,7 @@
             <label class="field"><span>Versión mínima de AK Screen</span><select id="min-version"><option>2.3.0</option><option>2.2.0</option></select></label>
             <label class="field full"><span>Descripción</span><textarea id="description" rows="3" maxlength="4096">Un espacio de edición personalizado para AK Screen.</textarea></label>
           </div>
-          <div class="note-card"><span class="note-icon">i</span><p>El esquema usa los nombres y propiedades que reconoce AK Screen. Los valores ausentes heredan el tema base.</p></div>
+          <div class="note-card"><span class="note-icon">i</span><p>El ZIP conserva CSS, paneles, fondos, fuentes, iconos y sus archivos. Si importas solo JSON, los recursos externos no están incluidos.</p></div>
           <div class="preset-row"><span>Empezar desde</span><div><button class="preset" data-preset="studio">Studio Blue</button><button class="preset" data-preset="midnight">Midnight</button><button class="preset" data-preset="light">Light</button></div></div>
         </section>
 
@@ -67,10 +68,10 @@
         </section>
 
         <section class="editor-section" id="section-layout">
-          <div class="section-heading"><div><span class="overline">DISPOSICIÓN DEL ESPACIO</span><h2>Paneles y layout</h2><p>Distribuye pestañas entre los grupos y modifica las proporciones del editor.</p></div></div>
-          <label class="field"><span>Espacio de trabajo</span><select id="workspace"><option>Editing</option><option>Color</option><option>Audio</option><option>Effects</option><option selected>Studio</option></select></label>
+          <div class="section-heading"><div><span class="overline">DISPOSICIÓN DEL ESPACIO</span><h2>Paneles y layout</h2><p>Elige un espacio de trabajo nativo. Arrastra pestañas entre grupos, crea divisiones con las flechas y ajusta los separadores directamente en la vista previa.</p></div></div>
+          <label class="field"><span>Espacio de trabajo</span><select id="workspace"><option selected>Editing</option><option>Assembly</option><option>Color</option><option>Effects</option><option>Audio</option><option>Captions and Graphics</option><option>Learning</option><option>Review</option><option>All Panels</option><option>Focus</option><option>Studio</option><option>Compositing</option></select></label>
           <div class="layout-ratios" id="layout-ratios"></div>
-          <div class="subsection"><div class="subsection-heading"><div><h3>Distribución de paneles</h3><p>Arrastra los paneles entre los grupos. Los cambios aparecen en la vista previa.</p></div><button class="text-button" id="reset-layout" type="button">Restablecer</button></div>
+          <div class="subsection"><div class="subsection-heading"><div><h3>Distribución de paneles</h3><p>Arrastra pestañas entre grupos; usa las flechas para crear divisiones, × para retirar paneles y ajusta separadores en la vista previa.</p></div><button class="text-button" id="reset-layout" type="button">Restablecer</button></div>
             <div class="panel-groups" id="panel-groups"></div>
             <details class="available-panels"><summary>Mostrar los demás paneles disponibles</summary><div id="available-panels" class="panel-pool"></div></details>
           </div>
@@ -78,7 +79,7 @@
 
         <section class="editor-section" id="section-assets">
           <div class="section-heading"><div><span class="overline">ARCHIVOS DEL PAQUETE</span><h2>Recursos del tema</h2><p>Fondos, tipografía e iconos viajan junto al manifiesto dentro del ZIP.</p></div></div>
-          <div class="asset-card"><div class="asset-copy"><b>Fondo del editor</b><span>PNG, JPEG, GIF o WebP · hasta 16 MB</span><small>Se muestra detrás de los paneles en la app.</small></div><label class="upload-button">Elegir archivo<input type="file" id="editor-background-file" accept="image/png,image/jpeg,image/gif,image/webp"></label><button class="remove-asset" data-remove="editor-background" aria-label="Quitar fondo del editor">×</button><div class="asset-preview" id="editor-background-preview">Sin imagen</div><label class="preview-opacity"><span>Opacidad solo de vista previa <output id="background-opacity-value">38 %</output></span><input id="background-opacity" type="range" min="0" max="100" value="38"><small>El nivel real se guarda en las preferencias locales de AK Screen y no forma parte del tema compartido.</small></label></div>
+          <div class="asset-card"><div class="asset-copy"><b>Fondo del editor</b><span>PNG, JPEG, GIF o WebP · hasta 16 MB</span><small>Se muestra detrás de los paneles en la app.</small></div><label class="upload-button">Elegir archivo<input type="file" id="editor-background-file" accept="image/png,image/jpeg,image/gif,image/webp"></label><button class="remove-asset" data-remove="editor-background" aria-label="Quitar fondo del editor">×</button><div class="asset-preview" id="editor-background-preview">Sin imagen</div><label class="preview-opacity"><span>Opacidad solo de vista previa <output id="background-opacity-value">22 %</output></span><input id="background-opacity" type="range" min="0" max="100" value="22"><small>El nivel real se guarda en las preferencias locales de AK Screen y no forma parte del tema compartido.</small></label></div>
           <div class="asset-card"><div class="asset-copy"><b>Pantalla de inicio</b><span>PNG, JPEG, GIF o WebP · hasta 16 MB</span><small>La app la muestra al iniciar cuando está habilitada.</small></div><label class="upload-button">Elegir archivo<input type="file" id="splash-background-file" accept="image/png,image/jpeg,image/gif,image/webp"></label><button class="remove-asset" data-remove="splash-background" aria-label="Quitar pantalla de inicio">×</button><div class="asset-preview" id="splash-background-preview">Sin imagen</div></div>
           <div class="asset-card"><div class="asset-copy"><b>Tipografía de interfaz</b><span>TTF u OTF · hasta 8 MB</span><small>Incluye la licencia de redistribución en el ZIP.</small></div><label class="upload-button">Elegir fuente<input type="file" id="font-file" accept=".ttf,.otf,font/ttf,font/otf"></label><button class="remove-asset" data-remove="font" aria-label="Quitar fuente">×</button><div class="asset-preview" id="font-preview">Fuente del sistema</div></div>
           <div class="subsection"><div class="subsection-heading"><div><h3>Iconos SVG</h3><p>Se rasterizan en la app; no admiten scripts ni referencias externas.</p></div><label class="upload-button">Añadir SVG<input type="file" id="icon-file" accept="image/svg+xml,.svg" multiple></label></div><div id="icon-list" class="icon-list"></div></div>
@@ -114,7 +115,7 @@
 
     <section class="preview-pane" aria-label="Vista previa en tiempo real">
       <div class="preview-header"><div class="preview-title"><span class="overline">VISTA PREVIA EN VIVO</span><b>AK Screen · 2.3.0</b></div><div class="preview-tools"><span class="live-pill"><i></i> EN VIVO</span><button id="preview-splash" class="quiet-button" type="button">Inicio</button><button id="preview-fit" class="icon-button" type="button" title="Ajustar vista">⛶</button><button id="preview-full" class="icon-button" type="button" title="Pantalla completa">⤢</button></div></div>
-      <div class="preview-stage"><div class="preview-frame"><iframe id="app-preview" title="Vista previa de la interfaz del editor AK Screen" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></div><div class="preview-caption"><span>Área de trabajo</span><span>Arrastra divisores o personaliza los paneles en Layout</span><span id="preview-resolution">Vista escalable · 2.3.0</span></div></div>
+      <div class="preview-stage"><div class="preview-frame"><iframe id="app-preview" title="Vista previa de la interfaz del editor AK Screen" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></div><div class="preview-caption"><span>Área de trabajo</span><span>Resolución nativa 1366 × 768 · arrastra pestañas y separadores</span><span id="preview-resolution">AK Screen · 2.3.0</span></div></div>
       <div class="preview-inspector"><div class="inspector-heading"><div><span class="overline">RESUMEN DEL TEMA</span><h3 id="inspector-name">AK Studio Pro</h3></div><span class="base-chip" id="inspector-base">STUDIO BLUE</span></div><div class="swatch-strip" id="swatch-strip"></div><div class="inspector-stats"><div><span>COLORES</span><b id="stat-colors">47</b></div><div><span>MÉTRICAS</span><b id="stat-metrics">11</b></div><div><span>PANELES</span><b id="stat-panels">7</b></div><div><span>RECURSOS</span><b id="stat-assets">0</b></div></div></div>
       <div class="preview-footnote"><span>↻</span> Los cambios se guardan automáticamente y se aplican aquí al instante.</div>
     </section>
