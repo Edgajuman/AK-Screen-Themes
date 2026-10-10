@@ -3,7 +3,7 @@ on:
   pull_request:
   push:
     branches: [main]
-    paths: ['themes/**', 'scripts/**', 'index.html', '.github/workflows/catalog.yml']
+    paths: ['themes/**', 'scripts/**', 'index.html', 'theme-studio.*', 'theme-preview.html', '.github/workflows/catalog.yml']
   workflow_dispatch:
 permissions:
   contents: read

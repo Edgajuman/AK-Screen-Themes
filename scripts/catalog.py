@@ -167,6 +167,8 @@ def build(revision):
     (ROOT/'themes-v2.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     site=ROOT/'site'; site.mkdir(exist_ok=True)
     (site/'index.html').write_bytes((ROOT/'index.html').read_bytes())
+    for name in ('theme-studio.html','theme-studio.css','theme-studio.js','theme-preview.html'):
+        (site/name).write_bytes((ROOT/name).read_bytes())
     (site/'themes.json').write_bytes((ROOT/'themes-v2.json').read_bytes())
     script='window.AKSCREEN_THEMES = '+json.dumps(data,ensure_ascii=False).replace('<','\\u003c')+';\n'
     (ROOT/'catalog-data.js').write_text(script,encoding='utf-8')

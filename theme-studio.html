@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Diseña, previsualiza y exporta temas compatibles con AK Screen 2.3.0.">
+  <title>Constructor de temas · AK Screen</title>
+  <link rel="stylesheet" href="theme-studio.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="AK Screen Themes, volver al catálogo"><span class="brand-mark">AK</span><span>AK Screen <small>THEME STUDIO</small></span></a>
+    <div class="project-title"><span class="live-dot"></span><span id="theme-title">Tema sin título</span><span class="saved-state" id="saved-state">Guardado en este navegador</span></div>
+    <div class="top-actions">
+      <button class="quiet-button" id="import-theme" type="button">Importar JSON</button>
+      <button class="quiet-button" id="export-json" type="button">JSON</button>
+      <button class="primary-button" id="export-zip" type="button"><span>↓</span> Exportar ZIP para PR</button>
+      <input id="import-file" type="file" accept="application/json,.json" hidden>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="settings-rail">
+      <div class="rail-heading"><div><span class="overline">THEME STUDIO</span><h1>Constructor de temas</h1></div><span class="version-badge">2.3.0</span></div>
+      <p class="rail-intro">Personaliza la interfaz de AK Screen y revisa los cambios en vivo.</p>
+      <nav class="section-nav" aria-label="Secciones del constructor">
+        <button class="section-link active" data-section="identity"><span>01</span> Identidad</button>
+        <button class="section-link" data-section="colors"><span>02</span> Colores</button>
+        <button class="section-link" data-section="metrics"><span>03</span> Medidas y bordes</button>
+        <button class="section-link" data-section="layout"><span>04</span> Paneles y layout</button>
+        <button class="section-link" data-section="assets"><span>05</span> Recursos</button>
+        <button class="section-link" data-section="css"><span>06</span> CSS nativo</button>
+        <button class="section-link" data-section="publish"><span>07</span> Exportar y publicar</button>
+      </nav>
+      <div class="rail-footer"><span class="local-icon">◈</span><div><b>Proyecto local</b><small>Los cambios se guardan en este navegador.</small></div></div>
+    </aside>
+
+    <section class="controls-pane" aria-label="Configuración del tema">
+      <div class="controls-scroll">
+        <section class="editor-section active" id="section-identity">
+          <div class="section-heading"><div><span class="overline">CONFIGURACIÓN GENERAL</span><h2>Identidad del tema</h2><p>Metadatos que se incluirán en la carpeta que enviarás al repositorio.</p></div><button class="text-button" id="reset-theme" type="button">Restablecer</button></div>
+          <div class="field-grid two">
+            <label class="field"><span>Nombre del tema</span><input id="name" maxlength="160" value="AK Studio Pro"></label>
+            <label class="field"><span>Identificador</span><input id="theme-id" maxlength="80" value="ak-studio-pro"><small>Minúsculas, números y guiones.</small></label>
+            <label class="field"><span>Autor / usuario de GitHub</span><input id="author" maxlength="80" value="tu-usuario"></label>
+            <label class="field"><span>Versión</span><input id="version" value="1.0.0" inputmode="decimal"></label>
+            <label class="field"><span>Tema base</span><select id="base"><option value="dark">Dark</option><option value="medium">Medium</option><option value="light">Light</option><option value="StudioBlue" selected>Studio Blue</option><option value="oled">OLED</option></select></label>
+            <label class="field"><span>Versión mínima de AK Screen</span><select id="min-version"><option>2.3.0</option><option>2.2.0</option></select></label>
+            <label class="field full"><span>Descripción</span><textarea id="description" rows="3" maxlength="4096">Un espacio de edición personalizado para AK Screen.</textarea></label>
+          </div>
+          <div class="note-card"><span class="note-icon">i</span><p>El esquema usa los nombres y propiedades que reconoce AK Screen. Los valores ausentes heredan el tema base.</p></div>
+          <div class="preset-row"><span>Empezar desde</span><div><button class="preset" data-preset="studio">Studio Blue</button><button class="preset" data-preset="midnight">Midnight</button><button class="preset" data-preset="light">Light</button></div></div>
+        </section>
+
+        <section class="editor-section" id="section-colors">
+          <div class="section-heading"><div><span class="overline">PALETA NATIVA · 47 TOKENS</span><h2>Colores del editor</h2><p>Paleta real de la interfaz, la línea de tiempo, los gráficos de animación y los estados.</p></div><button class="text-button" id="copy-colors" type="button">Copiar paleta</button></div>
+          <div class="color-tools"><input id="color-search" type="search" placeholder="Buscar color…"><span id="color-count">47 colores</span></div>
+          <div id="color-groups" class="color-groups"></div>
+          <div class="subsection"><h3>Colores de clips</h3><p>Marcas visuales de clips dentro de la timeline.</p><div id="clip-color-fields" class="compact-colors"></div></div>
+          <div class="subsection"><h3>Colores del panel de medios</h3><div id="asset-color-fields" class="compact-colors"></div></div>
+        </section>
+
+        <section class="editor-section" id="section-metrics">
+          <div class="section-heading"><div><span class="overline">ESCALA Y CROMADO</span><h2>Medidas y bordes</h2><p>Controla densidad, radios, tiempos y divisores del espacio de trabajo.</p></div></div>
+          <div class="metric-list" id="metric-fields"></div>
+        </section>
+
+        <section class="editor-section" id="section-layout">
+          <div class="section-heading"><div><span class="overline">DISPOSICIÓN DEL ESPACIO</span><h2>Paneles y layout</h2><p>Distribuye pestañas entre los grupos y modifica las proporciones del editor.</p></div></div>
+          <label class="field"><span>Espacio de trabajo</span><select id="workspace"><option>Editing</option><option>Color</option><option>Audio</option><option>Effects</option><option selected>Studio</option></select></label>
+          <div class="layout-ratios" id="layout-ratios"></div>
+          <div class="subsection"><div class="subsection-heading"><div><h3>Distribución de paneles</h3><p>Arrastra los paneles entre los grupos. Los cambios aparecen en la vista previa.</p></div><button class="text-button" id="reset-layout" type="button">Restablecer</button></div>
+            <div class="panel-groups" id="panel-groups"></div>
+            <details class="available-panels"><summary>Mostrar los demás paneles disponibles</summary><div id="available-panels" class="panel-pool"></div></details>
+          </div>
+        </section>
+
+        <section class="editor-section" id="section-assets">
+          <div class="section-heading"><div><span class="overline">ARCHIVOS DEL PAQUETE</span><h2>Recursos del tema</h2><p>Fondos, tipografía e iconos viajan junto al manifiesto dentro del ZIP.</p></div></div>
+          <div class="asset-card"><div class="asset-copy"><b>Fondo del editor</b><span>PNG, JPEG, GIF o WebP · hasta 16 MB</span><small>Se muestra detrás de los paneles en la app.</small></div><label class="upload-button">Elegir archivo<input type="file" id="editor-background-file" accept="image/png,image/jpeg,image/gif,image/webp"></label><button class="remove-asset" data-remove="editor-background" aria-label="Quitar fondo del editor">×</button><div class="asset-preview" id="editor-background-preview">Sin imagen</div><label class="preview-opacity"><span>Opacidad solo de vista previa <output id="background-opacity-value">38 %</output></span><input id="background-opacity" type="range" min="0" max="100" value="38"><small>El nivel real se guarda en las preferencias locales de AK Screen y no forma parte del tema compartido.</small></label></div>
+          <div class="asset-card"><div class="asset-copy"><b>Pantalla de inicio</b><span>PNG, JPEG, GIF o WebP · hasta 16 MB</span><small>La app la muestra al iniciar cuando está habilitada.</small></div><label class="upload-button">Elegir archivo<input type="file" id="splash-background-file" accept="image/png,image/jpeg,image/gif,image/webp"></label><button class="remove-asset" data-remove="splash-background" aria-label="Quitar pantalla de inicio">×</button><div class="asset-preview" id="splash-background-preview">Sin imagen</div></div>
+          <div class="asset-card"><div class="asset-copy"><b>Tipografía de interfaz</b><span>TTF u OTF · hasta 8 MB</span><small>Incluye la licencia de redistribución en el ZIP.</small></div><label class="upload-button">Elegir fuente<input type="file" id="font-file" accept=".ttf,.otf,font/ttf,font/otf"></label><button class="remove-asset" data-remove="font" aria-label="Quitar fuente">×</button><div class="asset-preview" id="font-preview">Fuente del sistema</div></div>
+          <div class="subsection"><div class="subsection-heading"><div><h3>Iconos SVG</h3><p>Se rasterizan en la app; no admiten scripts ni referencias externas.</p></div><label class="upload-button">Añadir SVG<input type="file" id="icon-file" accept="image/svg+xml,.svg" multiple></label></div><div id="icon-list" class="icon-list"></div></div>
+          <div class="subsection"><h3>Licencia de recursos</h3><p>Describe autoría y procedencia. Obligatoria si incluyes una fuente.</p><label class="field"><span>Contenido de LICENSE.txt</span><textarea id="license-text" rows="4" placeholder="Escribe la licencia de los recursos que incluiste…"></textarea></label></div>
+        </section>
+
+        <section class="editor-section" id="section-css">
+          <div class="section-heading"><div><span class="overline">HOJA NATIVA · AK SCREEN 2.2+</span><h2>CSS del tema</h2><p>El editor admite un subconjunto seguro de CSS nativo, no CSS de navegador arbitrario.</p></div><label class="switch-label"><input type="checkbox" id="css-enabled" checked><span class="switch"></span> Activar CSS</label></div>
+          <div class="css-editor"><div class="code-header"><span><i></i><i></i><i></i> editor.css</span><label class="code-load">Cargar archivo<input id="css-file" type="file" accept=".css,text/css"></label><span id="css-bytes">0 / 64 KB</span></div><textarea id="css-source" spellcheck="false" aria-label="CSS nativo del tema"></textarea><div id="css-error" class="css-error" role="status"></div></div>
+          <div class="css-reference"><h3>Selectores y propiedades compatibles</h3><p><code>:root</code> acepta tokens de color y medidas como <code>--accent</code>, <code>--panel-bg</code> o <code>--gap</code>.</p><div class="selector-grid"><code>#editor</code><span>background-color</span><code>.panel</code><span>background-color, border-color, border-width, border-opacity, focus-opacity, border-radius, gap</span><code>.tabs</code><span>background-color, color, height</span><code>.timeline</code><span>background-color</span><code>.toolbar</code><span>background-color, height</span><code>.button</code><span>border-radius, height, background-color</span><code>.input</code><span>border-radius, background-color, border-color</span><code>.menu</code><span>animation-duration</span><code>.text</code><span>color, font-scale</span></div><pre>:root { --accent: #49b6ff; }
+.panel { border-opacity: 0.16; gap: 0px; }
+.toolbar { height: 42px; }</pre></div>
+        </section>
+
+        <section class="editor-section" id="section-publish">
+          <div class="section-heading"><div><span class="overline">PAQUETE REVISABLE</span><h2>Exportar y publicar</h2><p>Descarga una carpeta ZIP con la estructura lista para añadir a tu fork del catálogo.</p></div></div>
+          <div class="export-tree"><div class="tree-title"><span>ESTRUCTURA DEL PAQUETE</span><span id="package-size">Calculando…</span></div><pre id="package-tree">themes/
+└── tu-usuario/
+    └── ak-studio-pro/
+        ├── theme.json
+        ├── preview.png
+        ├── info.md
+        ├── editor.css
+        └── assets/</pre></div>
+          <label class="check-row"><input type="checkbox" id="include-css" checked><span>Incluir editor.css</span><small>La app ignora declaraciones que no estén permitidas por su esquema.</small></label>
+          <label class="check-row"><input type="checkbox" id="include-preview" checked><span>Generar preview.png</span><small>Necesaria para que el catálogo muestre una vista previa del tema.</small></label>
+          <div class="note-card warning"><span class="note-icon">!</span><p>Antes del pull request, añade créditos y licencias reales en <code>info.md</code> y valida con <code>python scripts/catalog.py --check</code>. El catálogo solo publica temas después de que se acepte el PR.</p></div>
+          <div class="export-actions"><button class="primary-button" id="export-zip-bottom" type="button">↓ Exportar ZIP para PR</button><button class="quiet-button" id="export-json-bottom" type="button">Solo theme.json</button></div>
+          <p class="publish-help">Después descomprime el ZIP en <code>themes/&lt;tu-usuario&gt;/&lt;id&gt;/</code>, revisa los archivos y abre un pull request en <a href="https://github.com/Edgajuman/AK-Screen-Themes/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">AK-Screen-Themes</a>.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="preview-pane" aria-label="Vista previa en tiempo real">
+      <div class="preview-header"><div class="preview-title"><span class="overline">VISTA PREVIA EN VIVO</span><b>AK Screen · 2.3.0</b></div><div class="preview-tools"><span class="live-pill"><i></i> EN VIVO</span><button id="preview-splash" class="quiet-button" type="button">Inicio</button><button id="preview-fit" class="icon-button" type="button" title="Ajustar vista">⛶</button><button id="preview-full" class="icon-button" type="button" title="Pantalla completa">⤢</button></div></div>
+      <div class="preview-stage"><div class="preview-frame"><iframe id="app-preview" title="Vista previa de la interfaz del editor AK Screen" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></div><div class="preview-caption"><span>Área de trabajo</span><span>Arrastra divisores o personaliza los paneles en Layout</span><span id="preview-resolution">Vista escalable · 2.3.0</span></div></div>
+      <div class="preview-inspector"><div class="inspector-heading"><div><span class="overline">RESUMEN DEL TEMA</span><h3 id="inspector-name">AK Studio Pro</h3></div><span class="base-chip" id="inspector-base">STUDIO BLUE</span></div><div class="swatch-strip" id="swatch-strip"></div><div class="inspector-stats"><div><span>COLORES</span><b id="stat-colors">47</b></div><div><span>MÉTRICAS</span><b id="stat-metrics">11</b></div><div><span>PANELES</span><b id="stat-panels">7</b></div><div><span>RECURSOS</span><b id="stat-assets">0</b></div></div></div>
+      <div class="preview-footnote"><span>↻</span> Los cambios se guardan automáticamente y se aplican aquí al instante.</div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="theme-studio.js" defer></script>
+</body>
+</html>

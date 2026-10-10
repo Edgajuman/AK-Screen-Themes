@@ -2,7 +2,9 @@
 
 Temas comunitarios revisados para **AK Screen**. Cada autor conserva sus paquetes, recursos y licencias en su propia carpeta.
 
-[**Explorar el catálogo con vistas previas →**](https://edgajuman.github.io/AK-Screen-Themes/) · [Crear un tema](CONTRIBUTING.md) · [Descargar AK Screen](https://github.com/Edgajuman/AKScreen-Downloads/releases)
+[**Explorar el catálogo con vistas previas →**](https://edgajuman.github.io/AK-Screen-Themes/) · [**Abrir el constructor web**](https://edgajuman.github.io/AK-Screen-Themes/theme-studio.html) · [Guía para publicar](CONTRIBUTING.md) · [Descargar AK Screen](https://github.com/Edgajuman/AKScreen-Downloads/releases)
+
+El constructor web permite previsualizar en directo la interfaz de AK Screen 2.3.0, editar los 47 colores nativos, las 11 métricas, la distribución y los tamaños de panel, y añadir hojas CSS nativas, SVG, fuentes y fondos. Exporta un ZIP con la ruta `themes/usuario/id/` listo para revisar y añadir a un pull request. Los datos del borrador se guardan localmente en el navegador; los recursos del tema solo se suben cuando el autor abre un PR.
 
 ## AK Studio Pro · ejemplo avanzado
 
