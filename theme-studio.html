@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%234c94ff%27/%3E%3Ctext x=%2750%25%27 y=%2758%25%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2732%27 font-weight=%27bold%27 fill=%27white%27%3EAK%3C/text%3E%3C/svg%3E">
-  <meta name="description" content="Crea temas para AK Screen 2.3.0 con vista previa nativa y exportación para el catálogo.">
+  <meta name="description" content="Crea temas para AK Screen 2.4.0 con vista previa nativa y exportación para el catálogo.">
   <title>Constructor de temas · AK Screen</title>
   <link rel="stylesheet" href="theme-studio.css">
 </head>
@@ -23,7 +23,7 @@
 
   <main class="workspace">
     <aside class="settings-rail">
-      <div class="rail-heading"><div><span class="overline">THEME STUDIO</span><h1>Constructor de temas</h1></div><span class="version-badge">2.3.0</span></div>
+      <div class="rail-heading"><div><span class="overline">THEME STUDIO</span><h1>Constructor de temas</h1></div><span class="version-badge">2.4.0</span></div>
       <p class="rail-intro">Personaliza la interfaz de AK Screen y revisa los cambios en vivo.</p>
       <nav class="section-nav" aria-label="Secciones del constructor">
         <button class="section-link active" data-section="identity"><span>01</span> Identidad</button>
@@ -47,7 +47,7 @@
             <label class="field"><span>Autor / usuario de GitHub</span><input id="author" maxlength="80" value="tu-usuario"></label>
             <label class="field"><span>Versión</span><input id="version" value="1.0.0" inputmode="decimal"></label>
             <label class="field"><span>Tema base</span><select id="base"><option value="dark">Dark</option><option value="medium">Medium</option><option value="light">Light</option><option value="StudioBlue" selected>Studio Blue</option><option value="oled">OLED</option></select></label>
-            <label class="field"><span>Versión mínima de AK Screen</span><select id="min-version"><option>2.3.0</option><option>2.2.0</option></select></label>
+            <label class="field"><span>Versión mínima de AK Screen</span><select id="min-version"><option>2.4.0</option><option>2.2.0</option></select></label>
             <label class="field full"><span>Descripción</span><textarea id="description" rows="3" maxlength="4096">Un espacio de edición personalizado para AK Screen.</textarea></label>
           </div>
           <div class="note-card"><span class="note-icon">i</span><p>El ZIP conserva CSS, paneles, fondos, fuentes, iconos y sus archivos. Si importas solo JSON, los recursos externos no están incluidos.</p></div>
@@ -114,8 +114,8 @@
     </section>
 
     <section class="preview-pane" aria-label="Vista previa en tiempo real">
-      <div class="preview-header"><div class="preview-title"><span class="overline">VISTA PREVIA EN VIVO</span><b>AK Screen · 2.3.0</b></div><div class="preview-tools"><span class="live-pill"><i></i> EN VIVO</span><button id="preview-splash" class="quiet-button" type="button">Inicio</button><button id="preview-fit" class="icon-button" type="button" title="Ajustar vista">⛶</button><button id="preview-full" class="icon-button" type="button" title="Pantalla completa">⤢</button></div></div>
-      <div class="preview-stage"><div class="preview-frame"><iframe id="app-preview" title="Vista previa de la interfaz del editor AK Screen" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></div><div class="preview-caption"><span>Área de trabajo</span><span>Resolución nativa 1366 × 768 · arrastra pestañas y separadores</span><span id="preview-resolution">AK Screen · 2.3.0</span></div></div>
+      <div class="preview-header"><div class="preview-title"><span class="overline">VISTA PREVIA EN VIVO</span><b>AK Screen · 2.4.0</b></div><div class="preview-tools"><span class="live-pill"><i></i> EN VIVO</span><button id="preview-splash" class="quiet-button" type="button">Inicio</button><button id="preview-fit" class="icon-button" type="button" title="Ajustar vista">⛶</button><button id="preview-full" class="icon-button" type="button" title="Pantalla completa">⤢</button></div></div>
+      <div class="preview-stage"><div class="preview-frame"><iframe id="app-preview" title="Vista previa de la interfaz del editor AK Screen" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></div><div class="preview-caption"><span>Área de trabajo</span><span>Resolución nativa 1366 × 768 · arrastra pestañas y separadores</span><span id="preview-resolution">AK Screen · 2.4.0</span></div></div>
       <div class="preview-inspector"><div class="inspector-heading"><div><span class="overline">RESUMEN DEL TEMA</span><h3 id="inspector-name">AK Studio Pro</h3></div><span class="base-chip" id="inspector-base">STUDIO BLUE</span></div><div class="swatch-strip" id="swatch-strip"></div><div class="inspector-stats"><div><span>COLORES</span><b id="stat-colors">47</b></div><div><span>MÉTRICAS</span><b id="stat-metrics">11</b></div><div><span>PANELES</span><b id="stat-panels">7</b></div><div><span>RECURSOS</span><b id="stat-assets">0</b></div></div></div>
       <div class="preview-footnote"><span>↻</span> Los cambios se guardan automáticamente y se aplican aquí al instante.</div>
     </section>

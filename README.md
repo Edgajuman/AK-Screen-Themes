@@ -6,6 +6,20 @@ Temas comunitarios revisados para **AK Screen**. Cada autor conserva sus paquete
 
 El constructor web permite previsualizar en directo la interfaz de AK Screen 2.3.0, editar los 47 colores nativos, las 11 métricas, la distribución de los espacios de trabajo de AK Screen (incluida la disposición Editing predeterminada), y añadir o quitar grupos y paneles, hojas CSS nativas, SVG, fuentes y fondos. La vista previa conserva la resolución lógica de 1366 × 768 y exporta esa misma vista como `preview.png`. Exporta un ZIP con la ruta `themes/usuario/id/` listo para revisar y añadir a un pull request. Los datos del borrador se guardan localmente en el navegador; los recursos del tema solo se suben cuando el autor abre un PR.
 
+## Studio Gallery · dehuman · 2.4.0
+
+![Studio Gallery · ilustración](themes/dehuman/studio-gallery/preview.png)
+
+[Studio Gallery](themes/dehuman/studio-gallery/) usa el esquema real del editor: 47 colores, métricas, layout, 24 iconos originales, fuente local con licencia, fondo WebP, carga GIF y CSS nativo. La biblioteca de efectos se presenta como galería de tres columnas, con animación al pasar el cursor. La imagen anterior es ilustrativa; las capturas reales se añaden al repositorio de descargas tras probar el binario.
+
+```css
+.effects-browser { display: grid; grid-template-columns: repeat(3, 1fr); }
+.effect-card { border-radius: 8px; background-color: #223044; }
+.effect-preview { play-on-hover: true; }
+```
+
+La distribución se define en `style.layout`, como árbol de divisiones y pestañas. El CSS actúa sobre los componentes nativos admitidos; no es un navegador ni ejecuta JavaScript. La opacidad del fondo se ajusta en Apariencia. [Guía completa](themes/dehuman/studio-gallery/info.md).
+
 ## AK Studio Pro · ejemplo avanzado
 
 ![AK Studio Pro en AK Screen 2.2](themes/edgajuman/ak-studio-pro/preview.png)

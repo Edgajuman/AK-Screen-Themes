@@ -4,6 +4,13 @@ import json
 import tempfile
 from pathlib import Path
 class CatalogueTests(unittest.TestCase):
+    def test_native_effect_gallery_and_unsafe_directives(self):
+        catalog.validate_css('.effects-browser { display: grid; grid-template-columns: repeat(3, 1fr); } .effect-preview { play-on-hover: true; } .effect-card { border-radius: 8px; background-color: #223044; }')
+        for css in ('.effects-browser { display: flex; }', '.effects-browser { grid-template-columns: repeat(99, 1fr); }', '.effect-preview { play-on-hover: url(x); }'):
+            with self.assertRaises(ValueError): catalog.validate_css(css)
+        studio=next(t for t in catalog.catalogue('0'*40)['themes'] if t['id']=='studio-gallery')
+        self.assertEqual(studio['author'],'dehuman')
+        self.assertEqual(studio['min_app_version'],'2.4.0')
     def test_paths_are_bounded_and_passive(self):
         self.assertTrue(catalog.safe_path('assets/backgrounds/editor.webp'))
         for path in ('../x.png','/x.png','C:/x.png','a\\x.png','a/%2e.png','tool.exe','a//x.png'):

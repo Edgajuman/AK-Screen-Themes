@@ -17,12 +17,13 @@ ROLES = {'accent':'accent','background':'window','header':'panel_alt','panel':'p
 
 
 METRICS = {'radius','radius_sm','gap','tab_h','header_h','control_h','font_scale','animation_time','panel_border_width','panel_border_opacity','focus_border_opacity'}
-SELECTORS = {':root','#editor','.panel','.tabs','.timeline','.toolbar','.button','.input','.menu','.text'}
+SELECTORS = {':root','#editor','.panel','.tabs','.timeline','.toolbar','.button','.input','.menu','.text','.effects-browser','.effect-card','.effect-preview'}
 CSS_PROPERTIES = {
  '#editor':{'background-color'},'.panel':{'background-color','border-color','border-width','border-opacity','focus-opacity','border-radius','gap'},
  '.tabs':{'background-color','color','height'},'.timeline':{'background-color'},'.toolbar':{'background-color','height'},
  '.button':{'border-radius','height','background-color'},'.input':{'border-radius','background-color','border-color'},
- '.menu':{'animation-duration'},'.text':{'color','font-scale'}
+ '.menu':{'animation-duration'},'.text':{'color','font-scale'},
+ '.effects-browser':{'display','grid-template-columns'},'.effect-card':{'border-radius','background-color'},'.effect-preview':{'play-on-hover'}
 }
 PANELS = {'Project','MediaBrowser','Libraries','Info','Effects','Markers','History','Source','EffectControls','AudioClipMixer','Metadata','Program','Timeline','Tools','AudioMeters','AudioTrackMixer','LumetriColor','LumetriScopes','EssentialGraphics','EssentialSound','Properties','Text','Events','Progress','ReferenceMonitor','Timecode','Camera','Extensions'}
 
@@ -40,6 +41,16 @@ def validate_css(text):
             if not declaration.strip(): continue
             prop,sep,value=declaration.partition(':');prop=prop.strip();value=value.strip()
             if not sep: raise ValueError('CSS: declaración inválida')
+            if selector=='.effects-browser' and prop=='display':
+                if value not in {'list','grid','gallery'}: raise ValueError('CSS: display admite list o grid')
+                continue
+            if selector=='.effects-browser' and prop=='grid-template-columns':
+                m=re.fullmatch(r'(?:repeat\(\s*([2-6])\s*,\s*1fr\s*\)|([2-6]))',value)
+                if not m: raise ValueError('CSS: columnas entre 2 y 6, repeat(n, 1fr)')
+                continue
+            if selector=='.effect-preview' and prop=='play-on-hover':
+                if value not in {'true','false','0','1'}: raise ValueError('CSS: play-on-hover debe ser booleano')
+                continue
             if selector==':root':
                 token=prop.removeprefix('--').replace('-','_')
                 if not prop.startswith('--') or token not in (METRICS|COLOR_ROLES): raise ValueError('CSS: token desconocido')

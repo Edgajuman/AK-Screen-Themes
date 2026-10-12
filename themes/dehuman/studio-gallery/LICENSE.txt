@@ -1,0 +1,4 @@
+Theme design, generated backgrounds and previews: CC0-1.0, dehuman.
+Generic original icons reused from AK Studio Pro: see their attribution sidecars.
+Rounded Mplus font: SIL OFL 1.1; included license in assets/fonts.
+https://creativecommons.org/publicdomain/zero/1.0/
