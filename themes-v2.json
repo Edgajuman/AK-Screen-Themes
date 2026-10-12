@@ -2,504 +2,6 @@
   "schema": 1,
   "themes": [
     {
-      "id": "studio-gallery",
-      "name": "Studio Gallery",
-      "version": "1.0.0",
-      "description": "Tema avanzado con galería animada de efectos, distribución de composición, tokens completos, iconos, tipografía local, fondo original y carga animada.",
-      "schema": 1,
-      "author": "dehuman",
-      "base": "StudioBlue",
-      "colors": {
-        "app_bg": "#111824",
-        "header_bg": "#121a26",
-        "panel_bg": "#192330",
-        "tab_bg": "#192330",
-        "tab_text": "#a8b9cf",
-        "tab_text_active": "#e9f3ff",
-        "focus": "#6cafff",
-        "accent": "#6cafff",
-        "accent_hover": "#9bcaff",
-        "text": "#e9f3ff",
-        "text_dim": "#a8b9cf",
-        "text_faint": "#6e6e6e",
-        "icon": "#a8b9cf",
-        "icon_active": "#49b6ff",
-        "hover": "#2b3e53",
-        "pressed": "#36536f",
-        "field_bg": "#101923",
-        "field_border": "#35475a",
-        "separator": "#35475a",
-        "row_alt": "#1e2c3c",
-        "row_selected": "#315579",
-        "hot_text": "#6cafff",
-        "tl_bg": "#18212e",
-        "tl_track_bg": "#203043",
-        "tl_track_bg_alt": "#25354b",
-        "tl_header_bg": "#142030",
-        "tl_ruler_bg": "#142030",
-        "tl_ruler_tick": "#8d8d8d",
-        "tl_ruler_text": "#b0b0b0",
-        "playhead": "#9bd8ff",
-        "in_out_shade": "#3f3f3f",
-        "clip_selected_border": "#ebebeb",
-        "render_red": "#e34850",
-        "render_yellow": "#f0f04f",
-        "render_green": "#2d9d78",
-        "monitor_bg": "#090f17",
-        "timecode": "#49b6ff",
-        "guide": "#5ee5d0",
-        "snap": "#f6b56d",
-        "graph_bg": "#101923",
-        "graph_grid": "#293b51",
-        "graph_curve": "#49b6ff",
-        "graph_velocity": "#f6b56d",
-        "graph_handle": "#92bdd9",
-        "keyframe": "#e9f3ff",
-        "danger": "#FF657A",
-        "safe_margin": "#93b6cb"
-      },
-      "preview": "preview.png",
-      "editor_background": "assets/backgrounds/editor.webp",
-      "splash_background": "assets/backgrounds/splash.gif",
-      "font": "assets/fonts/RoundedMplus1c-Regular.ttf",
-      "icons": {
-        "Play": "assets/icons/Play.svg",
-        "Pause": "assets/icons/Pause.svg",
-        "Camera": "assets/icons/Camera.svg",
-        "Trash": "assets/icons/Trash.svg",
-        "Folder": "assets/icons/Folder.svg",
-        "Keyframe": "assets/icons/Keyframe.svg",
-        "Gear": "assets/icons/Gear.svg",
-        "Bell": "assets/icons/Bell.svg",
-        "Captions": "assets/icons/Captions.svg",
-        "Selection": "assets/icons/Selection.svg",
-        "Razor": "assets/icons/Razor.svg",
-        "Export": "assets/icons/Export.svg",
-        "Undo": "assets/icons/Undo.svg",
-        "Redo": "assets/icons/Redo.svg",
-        "Eye": "assets/icons/Eye.svg",
-        "Lock": "assets/icons/Lock.svg",
-        "Mic": "assets/icons/Mic.svg",
-        "Audio": "assets/icons/Audio.svg",
-        "Workspaces": "assets/icons/Workspaces.svg",
-        "Type": "assets/icons/Type.svg",
-        "Fx": "assets/icons/Fx.svg",
-        "Marker": "assets/icons/Marker.svg",
-        "Zoom": "assets/icons/Zoom.svg",
-        "Sparkle": "assets/icons/Sparkle.svg"
-      },
-      "stylesheet": "editor.css",
-      "min_app_version": "2.4.0",
-      "style": {
-        "workspace": "Studio",
-        "metrics": {
-          "radius": 0,
-          "radius_sm": 6,
-          "gap": 0,
-          "tab_h": 32,
-          "header_h": 42,
-          "control_h": 28,
-          "font_scale": 1.05,
-          "animation_time": 0.14,
-          "panel_border_width": 1,
-          "panel_border_opacity": 0.08,
-          "focus_border_opacity": 0.18
-        },
-        "layout": {
-          "Split": {
-            "vertical": true,
-            "size": {
-              "Ratio": 0.6
-            },
-            "a": {
-              "Split": {
-                "vertical": false,
-                "size": {
-                  "Ratio": 0.23
-                },
-                "a": {
-                  "Tabs": {
-                    "panels": [
-                      "Project",
-                      "MediaBrowser",
-                      "Effects"
-                    ],
-                    "active": 2
-                  }
-                },
-                "b": {
-                  "Split": {
-                    "vertical": false,
-                    "size": {
-                      "Ratio": 0.67
-                    },
-                    "a": {
-                      "Tabs": {
-                        "panels": [
-                          "Program",
-                          "Source"
-                        ],
-                        "active": 0
-                      }
-                    },
-                    "b": {
-                      "Tabs": {
-                        "panels": [
-                          "Properties",
-                          "EffectControls",
-                          "Text"
-                        ],
-                        "active": 0
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "b": {
-              "Tabs": {
-                "panels": [
-                  "Timeline"
-                ],
-                "active": 0
-              }
-            }
-          }
-        },
-        "clip_colors": {
-          "video": "#466a9c",
-          "audio": "#338f79",
-          "image": "#9564bb",
-          "text": "#c5984e",
-          "effect": "#6f62bb",
-          "sequence": "#4b8fba",
-          "tutorial_cursor": "#48b7bb",
-          "tutorial_camera": "#8a6ed8"
-        },
-        "asset_colors": {
-          "video": "#466a9c",
-          "audio": "#338f79",
-          "image": "#9564bb",
-          "text": "#c5984e",
-          "effect": "#6f62bb",
-          "sequence": "#4b8fba"
-        },
-        "timeline_colors": {
-          "ruler": "#172333",
-          "selected_border": "#9bd8ff"
-        }
-      },
-      "revision": "b904c00a449e5e486a8d7751fd0efc1f9705bbfd",
-      "assets": [
-        {
-          "path": "FONT_LICENSE.md",
-          "size": 4397,
-          "sha256": "67f64c5509e5151796599e3ad47c3131cbe0c80c4f9430b90236a1249c2eacc9"
-        },
-        {
-          "path": "LICENSE.txt",
-          "size": 268,
-          "sha256": "d2019c3fd149a382e52bf1f838c672aa90e53dc9d0b81715b6e8498c72c0971d"
-        },
-        {
-          "path": "README.md",
-          "size": 955,
-          "sha256": "d3e71873bb310bff8dd6af17a08e834addda58e5ce12bf4700cf682c6185ef29"
-        },
-        {
-          "path": "assets/backgrounds/editor.webp",
-          "size": 7456,
-          "sha256": "09e91a1d6b477cb5d29904f208b6026254c9b41e9d431b7058b34bb5534c3828"
-        },
-        {
-          "path": "assets/backgrounds/editor.webp.attribution",
-          "size": 225,
-          "sha256": "da9253ec7e9534bdfe33c5d2e363a5fc06de3426a31faa178bb52eac2502d929"
-        },
-        {
-          "path": "assets/backgrounds/splash.gif",
-          "size": 41127,
-          "sha256": "1711aa25c6cd264dd4406379f34465417f1d1c87ac2239225ee78d6fb72b7959"
-        },
-        {
-          "path": "assets/backgrounds/splash.gif.attribution",
-          "size": 223,
-          "sha256": "323381c1e5ea3f85c550a3c6410ea9bce85b97c7e84c9b78efdcd459b88a9cc3"
-        },
-        {
-          "path": "assets/fonts/RoundedMplus1c-Regular.ttf",
-          "size": 3389792,
-          "sha256": "b75708b53e45b06d17d470aeeca5b766e3d1b3999f03f13ec4eb863ca846c14c"
-        },
-        {
-          "path": "assets/fonts/RoundedMplus1c-Regular.ttf.attribution",
-          "size": 397,
-          "sha256": "3bfc640ba2618da83daa15273be92d12116b2fdadbbc200be7e808a5de1926c0"
-        },
-        {
-          "path": "assets/icons/Audio.svg",
-          "size": 240,
-          "sha256": "6c1a68e395fef71fbfe01bd64f985da35c5b6c6d5edb21b1947c57740d243bd9"
-        },
-        {
-          "path": "assets/icons/Audio.svg.attribution",
-          "size": 269,
-          "sha256": "756ad9b22bfc8576f9c45cbd6bcfbfd2d4e18e57ef7da897fb9afa8aec6388f6"
-        },
-        {
-          "path": "assets/icons/Bell.svg",
-          "size": 243,
-          "sha256": "b7276023ffd4ee2c93a2f59514b63b184f53d6ffc1ce29d80643d3df4f813559"
-        },
-        {
-          "path": "assets/icons/Bell.svg.attribution",
-          "size": 267,
-          "sha256": "c3c9b8e0d15482b6f3bc71a16a76a0667b0b0fef93878808385e4803fe697cda"
-        },
-        {
-          "path": "assets/icons/Camera.svg",
-          "size": 269,
-          "sha256": "99aff25f1b7d84d836f594e42b56c8aa755827738ab9a2b5d1dab42bd084bb37"
-        },
-        {
-          "path": "assets/icons/Camera.svg.attribution",
-          "size": 271,
-          "sha256": "95eaf1b7e13a8716e6991457d7c5091c941cb305c4e2dd07dc25cb23f908ad57"
-        },
-        {
-          "path": "assets/icons/Captions.svg",
-          "size": 295,
-          "sha256": "bca3d8ef3be6cc05607134b6c3dd7d368458dff6cd5f5c9c0359db01de687c67"
-        },
-        {
-          "path": "assets/icons/Captions.svg.attribution",
-          "size": 275,
-          "sha256": "00e35ff0354d68f2e909cb531cea6526c493765c069d68d6965b083adc7906e8"
-        },
-        {
-          "path": "assets/icons/Export.svg",
-          "size": 237,
-          "sha256": "ed8374ab4a59f2cb57187f1d88cf8e92e629f915b365d2153104a1a25e61831f"
-        },
-        {
-          "path": "assets/icons/Export.svg.attribution",
-          "size": 271,
-          "sha256": "44ce6b69edae9d9c891dddf720b5b5436aab64d76f16621290c8e58aebef250a"
-        },
-        {
-          "path": "assets/icons/Eye.svg",
-          "size": 283,
-          "sha256": "8d3e8fae2075b2636eb9945c13a2ee7e1eae72f00f8cc1131b2e10fe2908898e"
-        },
-        {
-          "path": "assets/icons/Eye.svg.attribution",
-          "size": 265,
-          "sha256": "52ce64ff92ffbf33661a29c2bf9a1d0e649ede9ee3dc0f6430e4291a634c2049"
-        },
-        {
-          "path": "assets/icons/Folder.svg",
-          "size": 243,
-          "sha256": "bbef5861f93d6a9c21ab97696c15a65677d953b0c1234888283483fce3487930"
-        },
-        {
-          "path": "assets/icons/Folder.svg.attribution",
-          "size": 271,
-          "sha256": "27cbe45989014d5d89e14d9746cec19a7c72e5495e2bd10701404cb1f1925f57"
-        },
-        {
-          "path": "assets/icons/Fx.svg",
-          "size": 243,
-          "sha256": "796cb3524ed2f6c148e1d8ddad0f1e868973e12ff3fbaffd8332486823c6681f"
-        },
-        {
-          "path": "assets/icons/Fx.svg.attribution",
-          "size": 263,
-          "sha256": "743efbe189fd65840dc429a491f2cc2ce498a5a044ceeff48d5bc93944c6d596"
-        },
-        {
-          "path": "assets/icons/Gear.svg",
-          "size": 300,
-          "sha256": "f4d728d71f19ff51302489862f94367c6500f6ef469da3998a77eb32354f79b1"
-        },
-        {
-          "path": "assets/icons/Gear.svg.attribution",
-          "size": 267,
-          "sha256": "7c8267c652e70fdf1e6da3190140e706ce8a6adaa8b26d0040a2fc7d512ee807"
-        },
-        {
-          "path": "assets/icons/Keyframe.svg",
-          "size": 225,
-          "sha256": "ecc92ff499460567caa69f07ccf66b68e8b1d263f644da9a77a9564e9d35e087"
-        },
-        {
-          "path": "assets/icons/Keyframe.svg.attribution",
-          "size": 275,
-          "sha256": "0140b5b7e5f1ff83e77b6f366bff96efdc4b54a0a212e6245354878bf50d3863"
-        },
-        {
-          "path": "assets/icons/Lock.svg",
-          "size": 283,
-          "sha256": "417ad83ac4e30bd8cb472b6fb5a0ec5c06706af23acf1e0c56d1e094dd37012f"
-        },
-        {
-          "path": "assets/icons/Lock.svg.attribution",
-          "size": 267,
-          "sha256": "89ce65cf0a6eb78505a65418d7fe16e59979a7377de752bf695ea4444b565dfc"
-        },
-        {
-          "path": "assets/icons/Marker.svg",
-          "size": 222,
-          "sha256": "afbd2f66b6a5d84c72cdf28e0badb1e9cc3bbe8469a375277484a7c34e33d5d1"
-        },
-        {
-          "path": "assets/icons/Marker.svg.attribution",
-          "size": 271,
-          "sha256": "a8b359e48a8fb9e3f78679f98df4dd7b1a453371cf539da7d2f3d5ee17a4a2fb"
-        },
-        {
-          "path": "assets/icons/Mic.svg",
-          "size": 289,
-          "sha256": "fef7ab54d3bde74714fc77e35372a8d7257825dd37e84ab59c2895e85fbc1c4f"
-        },
-        {
-          "path": "assets/icons/Mic.svg.attribution",
-          "size": 265,
-          "sha256": "321d203a936ce214dc1af33dec3c93d5e9dbf31c88435a4c090bb9c2bd7871c3"
-        },
-        {
-          "path": "assets/icons/Pause.svg",
-          "size": 218,
-          "sha256": "f6e179ab671e626568fd8173adab97eefd6126f1fe88fa3ac1dd0850f02fed79"
-        },
-        {
-          "path": "assets/icons/Pause.svg.attribution",
-          "size": 269,
-          "sha256": "f56129240ec649804665984a50c7f88fcc7db2d52cbae424ad51aa445ae46220"
-        },
-        {
-          "path": "assets/icons/Play.svg",
-          "size": 218,
-          "sha256": "5df085bb1988fd41d56edf7efcb6dd5e4e680bd3c36dab1eaeb2b1f1abe9868e"
-        },
-        {
-          "path": "assets/icons/Play.svg.attribution",
-          "size": 267,
-          "sha256": "bb4d9910527ecc89d03a96e59741eed7f1fca577cf7ba13d812040b87f3bac9e"
-        },
-        {
-          "path": "assets/icons/Razor.svg",
-          "size": 240,
-          "sha256": "ac200f8c081da94d5e5fcb46aeb1ce813b25bc52b1868819199d21d4dc43c16e"
-        },
-        {
-          "path": "assets/icons/Razor.svg.attribution",
-          "size": 269,
-          "sha256": "30988c28a70240321840169a528509816f43905adc54fe34a6786e6581393606"
-        },
-        {
-          "path": "assets/icons/Redo.svg",
-          "size": 243,
-          "sha256": "b1c5e5e4569085e028d9f591d5fbc885e637f39d3fb10da4da8553771d853543"
-        },
-        {
-          "path": "assets/icons/Redo.svg.attribution",
-          "size": 267,
-          "sha256": "5a60c634b54dc0151c294799ff672bef08abd8a9b8c1d73d0fc3ad5863b9bc76"
-        },
-        {
-          "path": "assets/icons/Selection.svg",
-          "size": 228,
-          "sha256": "326163e48fcdd5aeec48343d0bd807fabc4bcec2b1b786f3e407b7eb8ea1b6de"
-        },
-        {
-          "path": "assets/icons/Selection.svg.attribution",
-          "size": 277,
-          "sha256": "17696d3f154bbe83e615c4742478283c5ce01b20186c07f1259d3afea1dd01f8"
-        },
-        {
-          "path": "assets/icons/Sparkle.svg",
-          "size": 236,
-          "sha256": "8fd8db96e01bf6ef45c3b55ea9b2d1aec11d55dd2aa5ee59afa23a1284f18a8e"
-        },
-        {
-          "path": "assets/icons/Sparkle.svg.attribution",
-          "size": 273,
-          "sha256": "03cc16bf8bdf8b279676526b0c9bcf9537ea6b350df0e3c5fc475f94a3cb9cf1"
-        },
-        {
-          "path": "assets/icons/Trash.svg",
-          "size": 254,
-          "sha256": "6c15e02af44befe38b41e4e97c4b85e8b870f220a9bb93a90be9c6c03e6a37e8"
-        },
-        {
-          "path": "assets/icons/Trash.svg.attribution",
-          "size": 269,
-          "sha256": "c20156676c64687d9dcf81110e5173b669e2e570e38dd126b9ddfb6ed1a41030"
-        },
-        {
-          "path": "assets/icons/Type.svg",
-          "size": 239,
-          "sha256": "d20cb996609eef2fb23c4edda2ccc02b194bcdadc527c4c69cc8e377c4de9d65"
-        },
-        {
-          "path": "assets/icons/Type.svg.attribution",
-          "size": 267,
-          "sha256": "ad548bc5e693b7b2f1c15bba22c7819deb524511c27f9133696075084dcf1243"
-        },
-        {
-          "path": "assets/icons/Undo.svg",
-          "size": 238,
-          "sha256": "3294858fbab6a14d526352a959cf0472be1c9e3b08eafb9670079cf1aaac5e22"
-        },
-        {
-          "path": "assets/icons/Undo.svg.attribution",
-          "size": 267,
-          "sha256": "6f16138fcd34f43b51e22e87da15f1fdfb907e90fe6499a74e7ee6ca892570e0"
-        },
-        {
-          "path": "assets/icons/Workspaces.svg",
-          "size": 275,
-          "sha256": "6afa6e5c16804466f916a03ed1ef341205ae1358866a4a31a0bd92a5c84431b7"
-        },
-        {
-          "path": "assets/icons/Workspaces.svg.attribution",
-          "size": 279,
-          "sha256": "943735225aa3430532122b86c07df3205a54946c9b369f73a1377661d88db834"
-        },
-        {
-          "path": "assets/icons/Zoom.svg",
-          "size": 257,
-          "sha256": "4e764ee55ea9a2d251e3ca7cbb88a2a601b6b6b38f4afd77f2924533bf94528e"
-        },
-        {
-          "path": "assets/icons/Zoom.svg.attribution",
-          "size": 267,
-          "sha256": "ed9507c0f8accfcc32c288201a603826e7782514513fcf35169b915183519b83"
-        },
-        {
-          "path": "editor.css",
-          "size": 1034,
-          "sha256": "c13ff2f8112d0ddfe4dfd7c51b96974e1b2c2d2aff40d03bb4992e08ed3eb7cd"
-        },
-        {
-          "path": "info.md",
-          "size": 691,
-          "sha256": "9478c7605d34903add3ecbe4fe5eaceecd965136ebc0761d644afc79cb6c8dea"
-        },
-        {
-          "path": "preview.png",
-          "size": 525062,
-          "sha256": "1058c4baeade50d5ab8c6ad24d4675b9937ec4e67c0c8b6c2a8bd76218eaf454"
-        },
-        {
-          "path": "preview.png.attribution",
-          "size": 225,
-          "sha256": "e62efb9cb1a09cec356cb69dafea9ebd54f9feb238314d10f48b90db3b037133"
-        }
-      ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-b904c00a449e/dehuman-studio-gallery.zip"
-    },
-    {
       "id": "ak-midnight",
       "name": "AK Midnight",
       "version": "1.0.1",
@@ -579,7 +81,7 @@
           "sequence": "#795B9B"
         }
       },
-      "revision": "b904c00a449e5e486a8d7751fd0efc1f9705bbfd",
+      "revision": "70d58170437498f6cba244e0fa843e6ea4a7a1ed",
       "assets": [
         {
           "path": "LICENSE.txt",
@@ -602,7 +104,7 @@
           "sha256": "043e0df70bb2de16ea31087b1d6efdb48eaf3d82e468015c2d0d65bcc1515c09"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-b904c00a449e/edgajuman-ak-midnight.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-70d581704374/edgajuman-ak-midnight.zip"
     },
     {
       "id": "ak-studio-pro",
@@ -792,7 +294,7 @@
           "selected_border": "#9bd8ff"
         }
       },
-      "revision": "b904c00a449e5e486a8d7751fd0efc1f9705bbfd",
+      "revision": "70d58170437498f6cba244e0fa843e6ea4a7a1ed",
       "assets": [
         {
           "path": "FONT_LICENSE.md",
@@ -1105,7 +607,7 @@
           "sha256": "79e2bdb980592fb4669c4fe0e322465ec5825a33e8be91a091202decbe588a26"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-b904c00a449e/edgajuman-ak-studio-pro.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-70d581704374/edgajuman-ak-studio-pro.zip"
     },
     {
       "id": "aurora-glass",
@@ -1268,7 +770,7 @@
           ]
         }
       },
-      "revision": "b904c00a449e5e486a8d7751fd0efc1f9705bbfd",
+      "revision": "70d58170437498f6cba244e0fa843e6ea4a7a1ed",
       "assets": [
         {
           "path": "assets/icons/cursor.svg",
@@ -1291,7 +793,7 @@
           "sha256": "6264ce8afebf1443b29dff0ba84713cb7fea16acc8c2fedbc9cddeb5bc59248b"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-b904c00a449e/edgajuman-aurora-glass.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-70d581704374/edgajuman-aurora-glass.zip"
     },
     {
       "id": "sakura-pulse",
@@ -1623,7 +1125,7 @@
           ]
         }
       },
-      "revision": "b904c00a449e5e486a8d7751fd0efc1f9705bbfd",
+      "revision": "70d58170437498f6cba244e0fa843e6ea4a7a1ed",
       "assets": [
         {
           "path": "FONT_LICENSE.md",
@@ -1881,7 +1383,505 @@
           "sha256": "c4a4e53fab0a47cbe7bff012283656e61d393f55119544eda99aa5447a570656"
         }
       ],
-      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-b904c00a449e/edgajuman-sakura-pulse.zip"
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-70d581704374/edgajuman-sakura-pulse.zip"
+    },
+    {
+      "id": "studio-gallery",
+      "name": "Studio Gallery",
+      "version": "1.0.0",
+      "description": "Tema avanzado con galería animada de efectos, distribución de composición, tokens completos, iconos, tipografía local, fondo original y carga animada.",
+      "schema": 1,
+      "author": "edgajuman",
+      "base": "StudioBlue",
+      "colors": {
+        "app_bg": "#111824",
+        "header_bg": "#121a26",
+        "panel_bg": "#192330",
+        "tab_bg": "#192330",
+        "tab_text": "#a8b9cf",
+        "tab_text_active": "#e9f3ff",
+        "focus": "#6cafff",
+        "accent": "#6cafff",
+        "accent_hover": "#9bcaff",
+        "text": "#e9f3ff",
+        "text_dim": "#a8b9cf",
+        "text_faint": "#6e6e6e",
+        "icon": "#a8b9cf",
+        "icon_active": "#49b6ff",
+        "hover": "#2b3e53",
+        "pressed": "#36536f",
+        "field_bg": "#101923",
+        "field_border": "#35475a",
+        "separator": "#35475a",
+        "row_alt": "#1e2c3c",
+        "row_selected": "#315579",
+        "hot_text": "#6cafff",
+        "tl_bg": "#18212e",
+        "tl_track_bg": "#203043",
+        "tl_track_bg_alt": "#25354b",
+        "tl_header_bg": "#142030",
+        "tl_ruler_bg": "#142030",
+        "tl_ruler_tick": "#8d8d8d",
+        "tl_ruler_text": "#b0b0b0",
+        "playhead": "#9bd8ff",
+        "in_out_shade": "#3f3f3f",
+        "clip_selected_border": "#ebebeb",
+        "render_red": "#e34850",
+        "render_yellow": "#f0f04f",
+        "render_green": "#2d9d78",
+        "monitor_bg": "#090f17",
+        "timecode": "#49b6ff",
+        "guide": "#5ee5d0",
+        "snap": "#f6b56d",
+        "graph_bg": "#101923",
+        "graph_grid": "#293b51",
+        "graph_curve": "#49b6ff",
+        "graph_velocity": "#f6b56d",
+        "graph_handle": "#92bdd9",
+        "keyframe": "#e9f3ff",
+        "danger": "#FF657A",
+        "safe_margin": "#93b6cb"
+      },
+      "preview": "preview.png",
+      "editor_background": "assets/backgrounds/editor.webp",
+      "splash_background": "assets/backgrounds/splash.gif",
+      "font": "assets/fonts/RoundedMplus1c-Regular.ttf",
+      "icons": {
+        "Play": "assets/icons/Play.svg",
+        "Pause": "assets/icons/Pause.svg",
+        "Camera": "assets/icons/Camera.svg",
+        "Trash": "assets/icons/Trash.svg",
+        "Folder": "assets/icons/Folder.svg",
+        "Keyframe": "assets/icons/Keyframe.svg",
+        "Gear": "assets/icons/Gear.svg",
+        "Bell": "assets/icons/Bell.svg",
+        "Captions": "assets/icons/Captions.svg",
+        "Selection": "assets/icons/Selection.svg",
+        "Razor": "assets/icons/Razor.svg",
+        "Export": "assets/icons/Export.svg",
+        "Undo": "assets/icons/Undo.svg",
+        "Redo": "assets/icons/Redo.svg",
+        "Eye": "assets/icons/Eye.svg",
+        "Lock": "assets/icons/Lock.svg",
+        "Mic": "assets/icons/Mic.svg",
+        "Audio": "assets/icons/Audio.svg",
+        "Workspaces": "assets/icons/Workspaces.svg",
+        "Type": "assets/icons/Type.svg",
+        "Fx": "assets/icons/Fx.svg",
+        "Marker": "assets/icons/Marker.svg",
+        "Zoom": "assets/icons/Zoom.svg",
+        "Sparkle": "assets/icons/Sparkle.svg"
+      },
+      "stylesheet": "editor.css",
+      "min_app_version": "2.4.0",
+      "style": {
+        "workspace": "Studio",
+        "metrics": {
+          "radius": 0,
+          "radius_sm": 6,
+          "gap": 0,
+          "tab_h": 32,
+          "header_h": 42,
+          "control_h": 28,
+          "font_scale": 1.05,
+          "animation_time": 0.14,
+          "panel_border_width": 1,
+          "panel_border_opacity": 0.08,
+          "focus_border_opacity": 0.18
+        },
+        "layout": {
+          "Split": {
+            "vertical": true,
+            "size": {
+              "Ratio": 0.6
+            },
+            "a": {
+              "Split": {
+                "vertical": false,
+                "size": {
+                  "Ratio": 0.23
+                },
+                "a": {
+                  "Tabs": {
+                    "panels": [
+                      "Project",
+                      "MediaBrowser",
+                      "Effects"
+                    ],
+                    "active": 2
+                  }
+                },
+                "b": {
+                  "Split": {
+                    "vertical": false,
+                    "size": {
+                      "Ratio": 0.67
+                    },
+                    "a": {
+                      "Tabs": {
+                        "panels": [
+                          "Program",
+                          "Source"
+                        ],
+                        "active": 0
+                      }
+                    },
+                    "b": {
+                      "Tabs": {
+                        "panels": [
+                          "Properties",
+                          "EffectControls",
+                          "Text"
+                        ],
+                        "active": 0
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "b": {
+              "Tabs": {
+                "panels": [
+                  "Timeline"
+                ],
+                "active": 0
+              }
+            }
+          }
+        },
+        "clip_colors": {
+          "video": "#466a9c",
+          "audio": "#338f79",
+          "image": "#9564bb",
+          "text": "#c5984e",
+          "effect": "#6f62bb",
+          "sequence": "#4b8fba",
+          "tutorial_cursor": "#48b7bb",
+          "tutorial_camera": "#8a6ed8"
+        },
+        "asset_colors": {
+          "video": "#466a9c",
+          "audio": "#338f79",
+          "image": "#9564bb",
+          "text": "#c5984e",
+          "effect": "#6f62bb",
+          "sequence": "#4b8fba"
+        },
+        "timeline_colors": {
+          "ruler": "#172333",
+          "selected_border": "#9bd8ff"
+        }
+      },
+      "revision": "70d58170437498f6cba244e0fa843e6ea4a7a1ed",
+      "assets": [
+        {
+          "path": "FONT_LICENSE.md",
+          "size": 4397,
+          "sha256": "67f64c5509e5151796599e3ad47c3131cbe0c80c4f9430b90236a1249c2eacc9"
+        },
+        {
+          "path": "LICENSE.txt",
+          "size": 270,
+          "sha256": "576077eed41ca757636b55e101afabf445ebeeb16c78b3fa3e666d424813c606"
+        },
+        {
+          "path": "README.md",
+          "size": 957,
+          "sha256": "93154d88f2b1539572f55dacdca5bdfae1561b605290cc4d7273033912efc103"
+        },
+        {
+          "path": "assets/backgrounds/editor.webp",
+          "size": 7456,
+          "sha256": "09e91a1d6b477cb5d29904f208b6026254c9b41e9d431b7058b34bb5534c3828"
+        },
+        {
+          "path": "assets/backgrounds/editor.webp.attribution",
+          "size": 229,
+          "sha256": "c0406782a25682594e960872a9bf0cced7081ef512b7cdb29da8c44166a99d20"
+        },
+        {
+          "path": "assets/backgrounds/splash.gif",
+          "size": 41127,
+          "sha256": "1711aa25c6cd264dd4406379f34465417f1d1c87ac2239225ee78d6fb72b7959"
+        },
+        {
+          "path": "assets/backgrounds/splash.gif.attribution",
+          "size": 227,
+          "sha256": "e86a2a69e794db851ef9a60039804c4fe8bd03baa85a3dbd014e23ec431326a9"
+        },
+        {
+          "path": "assets/fonts/RoundedMplus1c-Regular.ttf",
+          "size": 3389792,
+          "sha256": "b75708b53e45b06d17d470aeeca5b766e3d1b3999f03f13ec4eb863ca846c14c"
+        },
+        {
+          "path": "assets/fonts/RoundedMplus1c-Regular.ttf.attribution",
+          "size": 397,
+          "sha256": "3bfc640ba2618da83daa15273be92d12116b2fdadbbc200be7e808a5de1926c0"
+        },
+        {
+          "path": "assets/icons/Audio.svg",
+          "size": 240,
+          "sha256": "6c1a68e395fef71fbfe01bd64f985da35c5b6c6d5edb21b1947c57740d243bd9"
+        },
+        {
+          "path": "assets/icons/Audio.svg.attribution",
+          "size": 269,
+          "sha256": "756ad9b22bfc8576f9c45cbd6bcfbfd2d4e18e57ef7da897fb9afa8aec6388f6"
+        },
+        {
+          "path": "assets/icons/Bell.svg",
+          "size": 243,
+          "sha256": "b7276023ffd4ee2c93a2f59514b63b184f53d6ffc1ce29d80643d3df4f813559"
+        },
+        {
+          "path": "assets/icons/Bell.svg.attribution",
+          "size": 267,
+          "sha256": "c3c9b8e0d15482b6f3bc71a16a76a0667b0b0fef93878808385e4803fe697cda"
+        },
+        {
+          "path": "assets/icons/Camera.svg",
+          "size": 269,
+          "sha256": "99aff25f1b7d84d836f594e42b56c8aa755827738ab9a2b5d1dab42bd084bb37"
+        },
+        {
+          "path": "assets/icons/Camera.svg.attribution",
+          "size": 271,
+          "sha256": "95eaf1b7e13a8716e6991457d7c5091c941cb305c4e2dd07dc25cb23f908ad57"
+        },
+        {
+          "path": "assets/icons/Captions.svg",
+          "size": 295,
+          "sha256": "bca3d8ef3be6cc05607134b6c3dd7d368458dff6cd5f5c9c0359db01de687c67"
+        },
+        {
+          "path": "assets/icons/Captions.svg.attribution",
+          "size": 275,
+          "sha256": "00e35ff0354d68f2e909cb531cea6526c493765c069d68d6965b083adc7906e8"
+        },
+        {
+          "path": "assets/icons/Export.svg",
+          "size": 237,
+          "sha256": "ed8374ab4a59f2cb57187f1d88cf8e92e629f915b365d2153104a1a25e61831f"
+        },
+        {
+          "path": "assets/icons/Export.svg.attribution",
+          "size": 271,
+          "sha256": "44ce6b69edae9d9c891dddf720b5b5436aab64d76f16621290c8e58aebef250a"
+        },
+        {
+          "path": "assets/icons/Eye.svg",
+          "size": 283,
+          "sha256": "8d3e8fae2075b2636eb9945c13a2ee7e1eae72f00f8cc1131b2e10fe2908898e"
+        },
+        {
+          "path": "assets/icons/Eye.svg.attribution",
+          "size": 265,
+          "sha256": "52ce64ff92ffbf33661a29c2bf9a1d0e649ede9ee3dc0f6430e4291a634c2049"
+        },
+        {
+          "path": "assets/icons/Folder.svg",
+          "size": 243,
+          "sha256": "bbef5861f93d6a9c21ab97696c15a65677d953b0c1234888283483fce3487930"
+        },
+        {
+          "path": "assets/icons/Folder.svg.attribution",
+          "size": 271,
+          "sha256": "27cbe45989014d5d89e14d9746cec19a7c72e5495e2bd10701404cb1f1925f57"
+        },
+        {
+          "path": "assets/icons/Fx.svg",
+          "size": 243,
+          "sha256": "796cb3524ed2f6c148e1d8ddad0f1e868973e12ff3fbaffd8332486823c6681f"
+        },
+        {
+          "path": "assets/icons/Fx.svg.attribution",
+          "size": 263,
+          "sha256": "743efbe189fd65840dc429a491f2cc2ce498a5a044ceeff48d5bc93944c6d596"
+        },
+        {
+          "path": "assets/icons/Gear.svg",
+          "size": 300,
+          "sha256": "f4d728d71f19ff51302489862f94367c6500f6ef469da3998a77eb32354f79b1"
+        },
+        {
+          "path": "assets/icons/Gear.svg.attribution",
+          "size": 267,
+          "sha256": "7c8267c652e70fdf1e6da3190140e706ce8a6adaa8b26d0040a2fc7d512ee807"
+        },
+        {
+          "path": "assets/icons/Keyframe.svg",
+          "size": 225,
+          "sha256": "ecc92ff499460567caa69f07ccf66b68e8b1d263f644da9a77a9564e9d35e087"
+        },
+        {
+          "path": "assets/icons/Keyframe.svg.attribution",
+          "size": 275,
+          "sha256": "0140b5b7e5f1ff83e77b6f366bff96efdc4b54a0a212e6245354878bf50d3863"
+        },
+        {
+          "path": "assets/icons/Lock.svg",
+          "size": 283,
+          "sha256": "417ad83ac4e30bd8cb472b6fb5a0ec5c06706af23acf1e0c56d1e094dd37012f"
+        },
+        {
+          "path": "assets/icons/Lock.svg.attribution",
+          "size": 267,
+          "sha256": "89ce65cf0a6eb78505a65418d7fe16e59979a7377de752bf695ea4444b565dfc"
+        },
+        {
+          "path": "assets/icons/Marker.svg",
+          "size": 222,
+          "sha256": "afbd2f66b6a5d84c72cdf28e0badb1e9cc3bbe8469a375277484a7c34e33d5d1"
+        },
+        {
+          "path": "assets/icons/Marker.svg.attribution",
+          "size": 271,
+          "sha256": "a8b359e48a8fb9e3f78679f98df4dd7b1a453371cf539da7d2f3d5ee17a4a2fb"
+        },
+        {
+          "path": "assets/icons/Mic.svg",
+          "size": 289,
+          "sha256": "fef7ab54d3bde74714fc77e35372a8d7257825dd37e84ab59c2895e85fbc1c4f"
+        },
+        {
+          "path": "assets/icons/Mic.svg.attribution",
+          "size": 265,
+          "sha256": "321d203a936ce214dc1af33dec3c93d5e9dbf31c88435a4c090bb9c2bd7871c3"
+        },
+        {
+          "path": "assets/icons/Pause.svg",
+          "size": 218,
+          "sha256": "f6e179ab671e626568fd8173adab97eefd6126f1fe88fa3ac1dd0850f02fed79"
+        },
+        {
+          "path": "assets/icons/Pause.svg.attribution",
+          "size": 269,
+          "sha256": "f56129240ec649804665984a50c7f88fcc7db2d52cbae424ad51aa445ae46220"
+        },
+        {
+          "path": "assets/icons/Play.svg",
+          "size": 218,
+          "sha256": "5df085bb1988fd41d56edf7efcb6dd5e4e680bd3c36dab1eaeb2b1f1abe9868e"
+        },
+        {
+          "path": "assets/icons/Play.svg.attribution",
+          "size": 267,
+          "sha256": "bb4d9910527ecc89d03a96e59741eed7f1fca577cf7ba13d812040b87f3bac9e"
+        },
+        {
+          "path": "assets/icons/Razor.svg",
+          "size": 240,
+          "sha256": "ac200f8c081da94d5e5fcb46aeb1ce813b25bc52b1868819199d21d4dc43c16e"
+        },
+        {
+          "path": "assets/icons/Razor.svg.attribution",
+          "size": 269,
+          "sha256": "30988c28a70240321840169a528509816f43905adc54fe34a6786e6581393606"
+        },
+        {
+          "path": "assets/icons/Redo.svg",
+          "size": 243,
+          "sha256": "b1c5e5e4569085e028d9f591d5fbc885e637f39d3fb10da4da8553771d853543"
+        },
+        {
+          "path": "assets/icons/Redo.svg.attribution",
+          "size": 267,
+          "sha256": "5a60c634b54dc0151c294799ff672bef08abd8a9b8c1d73d0fc3ad5863b9bc76"
+        },
+        {
+          "path": "assets/icons/Selection.svg",
+          "size": 228,
+          "sha256": "326163e48fcdd5aeec48343d0bd807fabc4bcec2b1b786f3e407b7eb8ea1b6de"
+        },
+        {
+          "path": "assets/icons/Selection.svg.attribution",
+          "size": 277,
+          "sha256": "17696d3f154bbe83e615c4742478283c5ce01b20186c07f1259d3afea1dd01f8"
+        },
+        {
+          "path": "assets/icons/Sparkle.svg",
+          "size": 236,
+          "sha256": "8fd8db96e01bf6ef45c3b55ea9b2d1aec11d55dd2aa5ee59afa23a1284f18a8e"
+        },
+        {
+          "path": "assets/icons/Sparkle.svg.attribution",
+          "size": 273,
+          "sha256": "03cc16bf8bdf8b279676526b0c9bcf9537ea6b350df0e3c5fc475f94a3cb9cf1"
+        },
+        {
+          "path": "assets/icons/Trash.svg",
+          "size": 254,
+          "sha256": "6c15e02af44befe38b41e4e97c4b85e8b870f220a9bb93a90be9c6c03e6a37e8"
+        },
+        {
+          "path": "assets/icons/Trash.svg.attribution",
+          "size": 269,
+          "sha256": "c20156676c64687d9dcf81110e5173b669e2e570e38dd126b9ddfb6ed1a41030"
+        },
+        {
+          "path": "assets/icons/Type.svg",
+          "size": 239,
+          "sha256": "d20cb996609eef2fb23c4edda2ccc02b194bcdadc527c4c69cc8e377c4de9d65"
+        },
+        {
+          "path": "assets/icons/Type.svg.attribution",
+          "size": 267,
+          "sha256": "ad548bc5e693b7b2f1c15bba22c7819deb524511c27f9133696075084dcf1243"
+        },
+        {
+          "path": "assets/icons/Undo.svg",
+          "size": 238,
+          "sha256": "3294858fbab6a14d526352a959cf0472be1c9e3b08eafb9670079cf1aaac5e22"
+        },
+        {
+          "path": "assets/icons/Undo.svg.attribution",
+          "size": 267,
+          "sha256": "6f16138fcd34f43b51e22e87da15f1fdfb907e90fe6499a74e7ee6ca892570e0"
+        },
+        {
+          "path": "assets/icons/Workspaces.svg",
+          "size": 275,
+          "sha256": "6afa6e5c16804466f916a03ed1ef341205ae1358866a4a31a0bd92a5c84431b7"
+        },
+        {
+          "path": "assets/icons/Workspaces.svg.attribution",
+          "size": 279,
+          "sha256": "943735225aa3430532122b86c07df3205a54946c9b369f73a1377661d88db834"
+        },
+        {
+          "path": "assets/icons/Zoom.svg",
+          "size": 257,
+          "sha256": "4e764ee55ea9a2d251e3ca7cbb88a2a601b6b6b38f4afd77f2924533bf94528e"
+        },
+        {
+          "path": "assets/icons/Zoom.svg.attribution",
+          "size": 267,
+          "sha256": "ed9507c0f8accfcc32c288201a603826e7782514513fcf35169b915183519b83"
+        },
+        {
+          "path": "editor.css",
+          "size": 1034,
+          "sha256": "c13ff2f8112d0ddfe4dfd7c51b96974e1b2c2d2aff40d03bb4992e08ed3eb7cd"
+        },
+        {
+          "path": "info.md",
+          "size": 691,
+          "sha256": "9478c7605d34903add3ecbe4fe5eaceecd965136ebc0761d644afc79cb6c8dea"
+        },
+        {
+          "path": "preview.png",
+          "size": 525062,
+          "sha256": "1058c4baeade50d5ab8c6ad24d4675b9937ec4e67c0c8b6c2a8bd76218eaf454"
+        },
+        {
+          "path": "preview.png.attribution",
+          "size": 229,
+          "sha256": "b98bdb236dd6bdbd3a54f8a47dadaff62848479aa3d65bb51b46e08685862bd4"
+        }
+      ],
+      "download": "https://github.com/Edgajuman/AK-Screen-Themes/releases/download/themes-70d581704374/edgajuman-studio-gallery.zip"
     }
   ]
 }
