@@ -1,6 +1,6 @@
 # Studio Gallery
 
-Tema de dehuman para AK Screen 2.4.0. La imagen siguiente es una **captura real de la aplicación instalada en Windows**, con medios de demostración generados por el editor.
+Tema de edgajuman para AK Screen 2.4.0. La imagen siguiente es una **captura real de la aplicación instalada en Windows**, con medios de demostración generados por el editor.
 
 ![Studio Gallery en AK Screen 2.4.0](preview.png)
 

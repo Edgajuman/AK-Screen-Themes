@@ -3,7 +3,7 @@
   "id": "studio-gallery",
   "name": "Studio Gallery",
   "version": "1.0.0",
-  "author": "dehuman",
+  "author": "edgajuman",
   "min_app_version": "2.4.0",
   "base": "StudioBlue",
   "description": "Tema avanzado con galería animada de efectos, distribución de composición, tokens completos, iconos, tipografía local, fondo original y carga animada.",

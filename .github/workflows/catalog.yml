@@ -3,7 +3,7 @@ on:
   pull_request:
   push:
     branches: [main]
-    paths: ['themes/**', 'scripts/**', 'index.html', 'theme-studio.*', 'theme-studio-catalog.js', 'theme-preview.html', 'theme-studio-icon.png', '.github/workflows/catalog.yml']
+    paths: ['themes/**', 'scripts/**', 'index.html', 'theme-studio.*', 'theme-studio-catalog.js', 'theme-studio-compat.js', 'theme-preview.html', 'theme-studio-icon.png', '.github/workflows/catalog.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,7 +20,7 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s scripts -p 'test_*.py'
       - run: python scripts/catalog.py --check
-      - run: node --check theme-studio.js && node --check theme-studio-catalog.js && node scripts/test_studio_catalog.cjs
+      - run: node --check theme-studio.js && node --check theme-studio-catalog.js && node scripts/test_studio_catalog.cjs && node --check theme-studio-compat.js && node scripts/test_studio_compat.cjs && node scripts/test_svg_policy.cjs
   publish:
     needs: validate
     if: github.event_name != 'pull_request'

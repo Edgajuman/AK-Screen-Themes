@@ -9,7 +9,7 @@ class CatalogueTests(unittest.TestCase):
         for css in ('.effects-browser { display: flex; }', '.effects-browser { grid-template-columns: repeat(99, 1fr); }', '.effect-preview { play-on-hover: url(x); }'):
             with self.assertRaises(ValueError): catalog.validate_css(css)
         studio=next(t for t in catalog.catalogue('0'*40)['themes'] if t['id']=='studio-gallery')
-        self.assertEqual(studio['author'],'dehuman')
+        self.assertEqual(studio['author'],'edgajuman')
         self.assertEqual(studio['min_app_version'],'2.4.0')
     def test_paths_are_bounded_and_passive(self):
         self.assertTrue(catalog.safe_path('assets/backgrounds/editor.webp'))

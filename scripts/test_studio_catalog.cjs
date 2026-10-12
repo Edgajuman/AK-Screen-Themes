@@ -9,7 +9,7 @@ const context = {window:{},TextDecoder,Uint8Array,Set,Map,AbortSignal,crypto:web
   fetch:async()=>new Response(served)};
 vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'../theme-studio-catalog.js'),'utf8'),context);
 const api = context.window.AKScreenThemeCatalogue;
-const theme={revision:'a'.repeat(40),author:'dehuman',id:'sample'};
+const theme={revision:'a'.repeat(40),author:'edgajuman',id:'sample'};
 assert.match(api.resourceUrl(theme,'assets/editor.webp'), /^https:\/\/raw\.githubusercontent\.com\/Edgajuman\/AK-Screen-Themes\//);
 for (const path of ['../a.png','/a.png','a\\b.png','a/%2e%2e/b.png','https://other/x','a//x','a?x']) {
   assert.throws(()=>api.resourceUrl(theme,path));

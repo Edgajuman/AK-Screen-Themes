@@ -8,11 +8,11 @@ El constructor web representa la interfaz de AK Screen 2.4.0 para editar los 47 
 
 En **Temas publicados**, busca por nombre o autor y pulsa **Previsualizar**. El tema se carga con sus fondos, carga animada, fuente, iconos, CSS y disposición sin instalarlo ni descargar un ZIP. Los archivos se leen de la revisión aprobada del repositorio y se verifican mediante SHA-256. **Volver a mi tema** recupera la vista de tu borrador; **Crear variante** convierte el tema elegido en una copia editable con otro identificador, conservando licencias y créditos. El borrador anterior queda recuperable desde el mismo apartado. Revisa las licencias de los recursos antes de enviar tu variante al catálogo.
 
-## Studio Gallery · dehuman · 2.4.0
+## Studio Gallery · edgajuman · 2.4.0
 
-![Studio Gallery · ilustración](themes/dehuman/studio-gallery/preview.png)
+![Studio Gallery · ilustración](themes/edgajuman/studio-gallery/preview.png)
 
-[Studio Gallery](themes/dehuman/studio-gallery/) usa el esquema real del editor: 47 colores, métricas, layout, 24 iconos originales, fuente local con licencia, fondo WebP, carga GIF y CSS nativo. La biblioteca de efectos se presenta como galería de tres columnas, con animación al pasar el cursor. La imagen anterior es ilustrativa; las capturas reales se añaden al repositorio de descargas tras probar el binario.
+[Studio Gallery](themes/edgajuman/studio-gallery/) usa el esquema real del editor: 47 colores, métricas, layout, 24 iconos originales, fuente local con licencia, fondo WebP, carga GIF y CSS nativo. La biblioteca de efectos se presenta como galería de tres columnas, con animación al pasar el cursor. La imagen anterior es ilustrativa; las capturas reales se añaden al repositorio de descargas tras probar el binario.
 
 ```css
 .effects-browser { display: grid; grid-template-columns: repeat(3, 1fr); }
@@ -20,7 +20,7 @@ En **Temas publicados**, busca por nombre o autor y pulsa **Previsualizar**. El 
 .effect-preview { play-on-hover: true; }
 ```
 
-La distribución se define en `style.layout`, como árbol de divisiones y pestañas. El CSS actúa sobre los componentes nativos admitidos; no es un navegador ni ejecuta JavaScript. La opacidad del fondo se ajusta en Apariencia. [Guía completa](themes/dehuman/studio-gallery/info.md).
+La distribución se define en `style.layout`, como árbol de divisiones y pestañas. El CSS actúa sobre los componentes nativos admitidos; no es un navegador ni ejecuta JavaScript. La opacidad del fondo se ajusta en Apariencia. [Guía completa](themes/edgajuman/studio-gallery/info.md).
 
 ## AK Studio Pro · ejemplo avanzado
 
@@ -61,3 +61,8 @@ El esquema original con `schema_version: 1` se convierte automáticamente al for
 ## Licencias
 
 Cada paquete incluye sus propias atribuciones. Los recursos de Sakura Pulse son originales de Edgajuman / AK Screen; su fuente conserva la licencia SIL OFL 1.1. Los scripts y la página de este repositorio se distribuyen bajo [MIT](LICENSE.txt). Ningún recurso de terceros puede añadirse sin permiso de redistribución.
+
+
+## Remakes de temas 2.0 y 2.1
+
+En [Theme Studio](https://edgajuman.github.io/AK-Screen-Themes/theme-studio.html), abre **Temas publicados**, selecciona **Previsualizar** y pulsa **Crear variante**. Los temas anteriores a 2.2 también se pueden previsualizar: sus colores, fondos, fuentes e iconos se convierten a los controles actuales. La variante se exporta para AK Screen 2.4, con las licencias y créditos originales, y conserva tu borrador anterior para recuperarlo. No cambia el paquete original ni promete reproducir controles históricos que ya no existen en el editor Rust.
