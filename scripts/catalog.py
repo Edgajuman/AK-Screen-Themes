@@ -178,12 +178,13 @@ def build(revision):
     (ROOT/'themes-v2.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     site=ROOT/'site'; site.mkdir(exist_ok=True)
     (site/'index.html').write_bytes((ROOT/'index.html').read_bytes())
-    for name in ('theme-studio.html','theme-studio.css','theme-studio.js','theme-preview.html','theme-studio-icon.png'):
+    for name in ('theme-studio.html','theme-studio.css','theme-studio.js','theme-studio-catalog.js','theme-preview.html','theme-studio-icon.png'):
         (site/name).write_bytes((ROOT/name).read_bytes())
     # GitHub Pages caches assets independently; the iframe must match the current builder.
-    asset_revision=hashlib.sha256((ROOT/'theme-studio.js').read_bytes()+(ROOT/'theme-preview.html').read_bytes()).hexdigest()[:16]
+    asset_revision=hashlib.sha256((ROOT/'theme-studio.js').read_bytes()+(ROOT/'theme-preview.html').read_bytes()+(ROOT/'theme-studio-catalog.js').read_bytes()+(ROOT/'theme-studio.css').read_bytes()).hexdigest()[:16]
     studio=(site/'theme-studio.html').read_text(encoding='utf-8')
     studio=studio.replace('href="theme-studio.css"',f'href="theme-studio.css?v={asset_revision}"')
+    studio=studio.replace('src="theme-studio-catalog.js"',f'src="theme-studio-catalog.js?v={asset_revision}"')
     studio=studio.replace('src="theme-studio.js"',f'src="theme-studio.js?v={asset_revision}"')
     (site/'theme-studio.html').write_text(studio,encoding='utf-8')
     studio_script=(site/'theme-studio.js').read_text(encoding='utf-8')

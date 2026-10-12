@@ -33,12 +33,20 @@
         <button class="section-link" data-section="assets"><span>05</span> Recursos</button>
         <button class="section-link" data-section="css"><span>06</span> CSS nativo</button>
         <button class="section-link" data-section="publish"><span>07</span> Exportar y publicar</button>
+        <button class="section-link" data-section="catalog"><span>08</span> Temas publicados</button>
       </nav>
       <div class="rail-footer"><span class="local-icon">◈</span><div><b>Proyecto local</b><small>Los cambios se guardan en este navegador.</small></div></div>
     </aside>
 
     <section class="controls-pane" aria-label="Configuración del tema">
       <div class="controls-scroll">
+        <section class="editor-section" id="section-catalog">
+          <div class="section-heading"><div><span class="overline">CATÁLOGO DE LA COMUNIDAD</span><h2>Temas publicados</h2><p>Prueba un tema en la vista previa sin instalarlo ni descargar un ZIP. Después puedes crear una variante editable con sus recursos y créditos.</p></div><button class="text-button" id="refresh-catalog" type="button">Actualizar</button></div>
+          <label class="field"><span>Buscar tema o autor</span><input id="catalog-search" type="search" placeholder="Nombre, autor o estilo…"></label>
+          <p class="catalog-status" id="catalog-status" role="status" aria-live="polite">Abre el catálogo para cargar los temas publicados.</p>
+          <div id="published-themes" class="published-themes"></div>
+          <p class="publish-help">La vista previa carga los archivos del tema en memoria. Tu borrador se conserva mientras exploras. Revisa la licencia del original antes de publicar una variante.</p>
+        </section>
         <section class="editor-section active" id="section-identity">
           <div class="section-heading"><div><span class="overline">CONFIGURACIÓN GENERAL</span><h2>Identidad del tema</h2><p>Metadatos que se incluirán en la carpeta que enviarás al repositorio.</p></div><button class="text-button" id="reset-theme" type="button">Restablecer</button></div>
           <div class="field-grid two">
@@ -115,12 +123,14 @@
 
     <section class="preview-pane" aria-label="Vista previa en tiempo real">
       <div class="preview-header"><div class="preview-title"><span class="overline">VISTA PREVIA EN VIVO</span><b>AK Screen · 2.4.0</b></div><div class="preview-tools"><span class="live-pill"><i></i> EN VIVO</span><button id="preview-splash" class="quiet-button" type="button">Inicio</button><button id="preview-fit" class="icon-button" type="button" title="Ajustar vista">⛶</button><button id="preview-full" class="icon-button" type="button" title="Pantalla completa">⤢</button></div></div>
+      <div id="catalog-preview-notice" class="catalog-preview-notice hidden"><div><b id="catalog-preview-name"></b><small>Vista temporal · tu borrador está conservado</small></div><button id="create-theme-variant" class="primary-button" type="button">Crear variante</button><button id="return-to-draft" class="quiet-button" type="button">Volver a mi tema</button></div>
       <div class="preview-stage"><div class="preview-frame"><iframe id="app-preview" title="Vista previa de la interfaz del editor AK Screen" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></div><div class="preview-caption"><span>Área de trabajo</span><span>Resolución nativa 1366 × 768 · arrastra pestañas y separadores</span><span id="preview-resolution">AK Screen · 2.4.0</span></div></div>
       <div class="preview-inspector"><div class="inspector-heading"><div><span class="overline">RESUMEN DEL TEMA</span><h3 id="inspector-name">AK Studio Pro</h3></div><span class="base-chip" id="inspector-base">STUDIO BLUE</span></div><div class="swatch-strip" id="swatch-strip"></div><div class="inspector-stats"><div><span>COLORES</span><b id="stat-colors">47</b></div><div><span>MÉTRICAS</span><b id="stat-metrics">11</b></div><div><span>PANELES</span><b id="stat-panels">7</b></div><div><span>RECURSOS</span><b id="stat-assets">0</b></div></div></div>
       <div class="preview-footnote"><span>↻</span> Los cambios se guardan automáticamente y se aplican aquí al instante.</div>
     </section>
   </main>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="theme-studio-catalog.js" defer></script>
   <script src="theme-studio.js" defer></script>
 </body>
 </html>
